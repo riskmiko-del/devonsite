@@ -1,0 +1,1818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devon Beaches — The Complete Guide | WildDevon</title>
+<meta name="description" content="Explore Devon's best beaches — from the surfing sands of Croyde and Woolacombe to the hidden coves of the South Hams and the Jurassic Coast. Filter by dogs, surf, families, and location.">
+<meta name="keywords" content="devon beaches, best beaches devon, north devon beaches, south devon beaches, dog friendly beaches devon, surf beaches devon, family beaches devon, jurassic coast beaches">
+<link rel="canonical" href="https://wilddevon.co.uk/devon-beaches">
+
+<meta property="og:title" content="Devon Beaches — The Complete Guide | WildDevon">
+<meta property="og:description" content="Find your perfect Devon beach — filter by dogs, surf, families, and location.">
+<meta property="og:type" content="website">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Devon Beaches — Complete Guide",
+  "description": "Complete guide to Devon beaches, filterable by type and features.",
+  "publisher": {"@type": "Organization", "name": "WildDevon", "url": "https://wilddevon.co.uk"}
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sand: #f2ead8;
+    --ocean: #1a4a5c;
+    --teal: #2d7d8a;
+    --foam: #e8f4f0;
+    --slate: #3d4f52;
+    --gold: #c8903a;
+    --cream: #faf7f0;
+    --dark: #1c2b2e;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--dark);
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav.topnav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 4rem;
+    background: rgba(28, 43, 46, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--sand);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+
+  .logo span { color: var(--gold); font-style: italic; }
+
+  nav.topnav ul { list-style: none; display: flex; gap: 2.5rem; }
+
+  nav.topnav ul a {
+    color: rgba(242, 234, 216, 0.75);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  nav.topnav ul a:hover,
+  nav.topnav ul a.active { color: var(--sand); }
+
+  /* PAGE HERO */
+  .page-hero {
+    padding-top: 80px;
+    background: var(--dark);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .page-hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 60% 30%, rgba(45,125,138,0.4) 0%, transparent 55%),
+      radial-gradient(ellipse at 10% 80%, rgba(200,144,58,0.15) 0%, transparent 50%),
+      linear-gradient(160deg, #0d2e38 0%, #1a4a5c 50%, #1c2b2e 100%);
+  }
+
+  .page-hero-inner {
+    position: relative;
+    z-index: 2;
+    padding: 4.5rem 4rem 5rem;
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+
+  .page-label {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .page-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 900;
+    color: var(--sand);
+    line-height: 1.1;
+    margin-bottom: 1.2rem;
+    max-width: 700px;
+  }
+
+  .page-hero p {
+    font-size: 1.05rem;
+    color: rgba(242,234,216,0.65);
+    line-height: 1.75;
+    font-weight: 300;
+    max-width: 540px;
+    margin-bottom: 2rem;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-stat { text-align: left; }
+
+  .hero-stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gold);
+    display: block;
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+
+  .hero-stat-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(242,234,216,0.4);
+  }
+
+  /* FILTER BAR */
+  .filter-bar {
+    background: white;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    position: sticky;
+    top: 72px;
+    z-index: 90;
+    padding: 0 4rem;
+  }
+
+  .filter-bar-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .filter-bar-inner::-webkit-scrollbar { display: none; }
+
+  .filter-btn {
+    padding: 1rem 1.2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--slate);
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+    letter-spacing: 0.02em;
+  }
+
+  .filter-btn:hover { color: var(--ocean); }
+
+  .filter-btn.active {
+    color: var(--ocean);
+    border-bottom-color: var(--ocean);
+    font-weight: 500;
+  }
+
+  /* LOCATION PILLS */
+  .location-filter {
+    background: var(--cream);
+    padding: 1.5rem 4rem;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+
+  .location-filter-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .location-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--slate);
+    letter-spacing: 0.05em;
+    margin-right: 0.4rem;
+  }
+
+  .loc-pill {
+    padding: 0.35rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.12);
+    color: var(--slate);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .loc-pill:hover,
+  .loc-pill.active {
+    background: var(--ocean);
+    color: white;
+    border-color: var(--ocean);
+  }
+
+  /* MAIN LAYOUT */
+  .beaches-layout {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 3rem 4rem;
+  }
+
+  .beaches-results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .results-count {
+    font-size: 0.85rem;
+    color: var(--slate);
+    font-weight: 300;
+  }
+
+  .results-count strong { color: var(--dark); font-weight: 500; }
+
+  /* BEACH GRID */
+  .beach-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .beach-card {
+    background: white;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.07);
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.16,1,0.3,1), box-shadow 0.3s;
+    cursor: pointer;
+  }
+
+  .beach-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 50px rgba(26,74,92,0.13);
+  }
+
+  .beach-card-img {
+    height: 180px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--ocean);
+  }
+
+  .beach-card-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.45) 100%);
+  }
+
+  .card-badges {
+    position: absolute;
+    bottom: 0.7rem;
+    left: 0.7rem;
+    right: 0.7rem;
+    z-index: 1;
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+    border-radius: 2px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(4px);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.25);
+  }
+
+  .badge-gold { background: var(--gold); color: var(--dark); border-color: transparent; }
+
+  .beach-card-body { padding: 1.4rem; }
+
+  .beach-card-location {
+    font-size: 0.72rem;
+    color: var(--teal);
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+  }
+
+  .beach-card-body h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--ocean);
+    line-height: 1.25;
+    margin-bottom: 0.6rem;
+  }
+
+  .beach-card-body p {
+    font-size: 0.85rem;
+    color: var(--slate);
+    line-height: 1.65;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  .card-features {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .feat {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: 2px;
+    background: var(--foam);
+    color: var(--teal);
+    font-weight: 500;
+  }
+
+  .feat-dog { background: #e8f5e2; color: #2d6b1f; }
+  .feat-surf { background: #e8f0f5; color: #1a4a6b; }
+  .feat-family { background: #f5e8f5; color: #6b1a6b; }
+  .feat-swim { background: var(--foam); color: var(--teal); }
+
+  .card-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.9rem 1.4rem;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    text-decoration: none;
+  }
+
+  .card-link span {
+    font-size: 0.82rem;
+    color: var(--gold);
+    font-weight: 500;
+    transition: gap 0.2s;
+  }
+
+  .card-link:hover span { color: var(--ocean); }
+
+  .card-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+    color: var(--slate);
+    font-weight: 300;
+  }
+
+  .beach-card.hidden { display: none; }
+
+  /* FEATURED ARTICLE PROMO */
+  .article-promo {
+    background: var(--ocean);
+    border-radius: 6px;
+    padding: 2.5rem;
+    margin: 2rem 0;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--sand);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .article-promo::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 200px; height: 200px;
+    background: rgba(45,125,138,0.2);
+    border-radius: 50%;
+  }
+
+  .promo-emoji { font-size: 3rem; flex-shrink: 0; position: relative; z-index: 1; }
+  .promo-content { flex: 1; min-width: 200px; position: relative; z-index: 1; }
+
+  .promo-tag {
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+
+  .promo-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+  }
+
+  .promo-content p { font-size: 0.88rem; color: rgba(242,234,216,0.7); line-height: 1.6; font-weight: 300; }
+
+  .promo-btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.65rem 1.4rem;
+    border-radius: 3px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .promo-btn:hover { background: #d9a050; transform: translateY(-1px); }
+
+  /* AD SLOT */
+  .ad-slot {
+    background: rgba(0,0,0,0.03);
+    border: 1px dashed rgba(0,0,0,0.12);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90px;
+    color: rgba(0,0,0,0.25);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 2rem 0;
+  }
+
+  /* REGION HEADERS */
+  .region-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 3rem 0 1.5rem;
+  }
+
+  .region-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--ocean);
+    white-space: nowrap;
+  }
+
+  .region-line { flex: 1; height: 1px; background: rgba(0,0,0,0.1); }
+
+  .region-count {
+    font-size: 0.78rem;
+    color: var(--teal);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  /* NEWSLETTER */
+  .newsletter-strip {
+    background: var(--dark);
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .newsletter-strip .label {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 0.8rem;
+  }
+
+  .newsletter-strip h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--sand);
+    margin-bottom: 0.8rem;
+  }
+
+  .newsletter-strip p {
+    font-size: 0.95rem;
+    color: rgba(242,234,216,0.55);
+    font-weight: 300;
+    margin-bottom: 2rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+  }
+
+  .nl-form { display: flex; max-width: 380px; margin: 0 auto; }
+
+  .nl-form input {
+    flex: 1;
+    padding: 0.85rem 1.1rem;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.14);
+    border-right: none;
+    color: var(--sand);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    border-radius: 2px 0 0 2px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .nl-form input::placeholder { color: rgba(242,234,216,0.3); }
+  .nl-form input:focus { border-color: rgba(200,144,58,0.5); }
+
+  .nl-form button {
+    padding: 0.85rem 1.3rem;
+    background: var(--gold);
+    color: var(--dark);
+    border: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0 2px 2px 0;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+
+  .nl-form button:hover { background: #d9a050; }
+
+  /* FOOTER */
+  footer { background: #111d1f; padding: 3rem 4rem 2rem; }
+
+  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+
+  .footer-brand .logo { font-size: 1.3rem; margin-bottom: 1rem; display: block; }
+  .footer-brand p { font-size: 0.85rem; color: rgba(242,234,216,0.4); line-height: 1.7; max-width: 260px; }
+
+  .footer-col h5 { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; }
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 0.7rem; }
+  .footer-col ul a { font-size: 0.85rem; color: rgba(242,234,216,0.45); text-decoration: none; transition: color 0.2s; }
+  .footer-col ul a:hover { color: var(--sand); }
+
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .footer-bottom p { font-size: 0.78rem; color: rgba(242,234,216,0.25); }
+
+  /* SCROLL REVEAL */
+  .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s cubic-bezier(0.16,1,0.3,1), transform 0.6s cubic-bezier(0.16,1,0.3,1); }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* NO RESULTS */
+  .no-results {
+    grid-column: 1 / -1;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: var(--slate);
+    display: none;
+  }
+
+  .no-results h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: var(--ocean);
+    margin-bottom: 0.5rem;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 1000px) {
+    nav.topnav { padding: 1rem 1.5rem; }
+    nav.topnav ul { display: none; }
+    .filter-bar { padding: 0 1.5rem; }
+    .location-filter { padding: 1.2rem 1.5rem; }
+    .beaches-layout { padding: 2rem 1.5rem; }
+    .page-hero-inner { padding: 3rem 1.5rem 4rem; }
+    .beach-grid { grid-template-columns: repeat(2, 1fr); }
+    footer { padding: 3rem 1.5rem 2rem; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  }
+
+  @media (max-width: 600px) {
+    .beach-grid { grid-template-columns: 1fr; }
+    .article-promo { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="topnav">
+  <a href="devon-outdoor-guide.html" class="logo">Wild<span>Devon</span></a>
+  <ul>
+    <li><a href="devon-beaches.html" class="active">Beaches</a></li>
+    <li><a href="#">Walks</a></li>
+    <li><a href="wild-swimming-dartmoor.html">Wild Swimming</a></li>
+    <li><a href="#">Surfing</a></li>
+    <li><a href="#">Where to Stay</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<header class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-inner">
+    <span class="page-label">Devon Beaches</span>
+    <h1>Find your perfect<br>Devon beach</h1>
+    <p>From the sweeping Atlantic sands of North Devon to the hidden coves of the South Hams and the fossil cliffs of the Jurassic Coast — Devon has some of England's finest beaches.</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-num">40+</span>
+        <span class="hero-stat-label">Beaches covered</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">4</span>
+        <span class="hero-stat-label">Coastline regions</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">21</span>
+        <span class="hero-stat-label">Surf spots</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">95mi</span>
+        <span class="hero-stat-label">Jurassic Coast</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <div class="filter-bar-inner">
+    <button class="filter-btn active" data-filter="all">All Beaches</button>
+    <button class="filter-btn" data-filter="dog">🐶 Dog Friendly</button>
+    <button class="filter-btn" data-filter="surf">🏄 Surfing</button>
+    <button class="filter-btn" data-filter="family">👨‍👩‍👧 Families</button>
+    <button class="filter-btn" data-filter="swim">🏊 Swimming</button>
+    <button class="filter-btn" data-filter="quiet">🤫 Quiet &amp; Hidden</button>
+    <button class="filter-btn" data-filter="rockpool">🦀 Rock Pools</button>
+  </div>
+</div>
+
+<!-- LOCATION FILTER -->
+<div class="location-filter">
+  <div class="location-filter-inner">
+    <span class="location-label">Area:</span>
+    <button class="loc-pill active" data-loc="all">All Devon</button>
+    <button class="loc-pill" data-loc="north">North Devon</button>
+    <button class="loc-pill" data-loc="south">South Devon</button>
+    <button class="loc-pill" data-loc="torbay">Torbay</button>
+    <button class="loc-pill" data-loc="east">East Devon</button>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="beaches-layout">
+
+  <div class="beaches-results-header">
+    <p class="results-count"><strong id="result-count">40</strong> beaches shown</p>
+  </div>
+
+  <div class="ad-slot">Advertisement</div>
+
+  <!-- ===== NORTH DEVON ===== -->
+  <div class="region-header reveal" data-region="north">
+    <h2>North Devon</h2>
+    <div class="region-line"></div>
+    <span class="region-count">12 beaches</span>
+  </div>
+
+  <div class="beach-grid" id="beach-grid">
+
+    <div class="beach-card reveal" data-tags="surf dog family swim" data-loc="north">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/29352700/pexels-photo-29352700.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <div class="card-badges">
+          <span class="badge badge-gold">Top Pick</span>
+          <span class="badge">3 Miles</span>
+        </div>
+      </div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">North Devon</div>
+        <h3>Woolacombe</h3>
+        <p>Three miles of golden Atlantic sand backed by rolling dunes — one of England's finest beaches. Reliable surf, lifeguards in season, and multiple dog-friendly sections at each end.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Dogs (ends)</span>
+          <span class="feat feat-surf">🏄 Surf</span>
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+          <span class="feat feat-swim">🏊 Swimming</span>
+        </div>
+      </div>
+      <a href="#" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.9 · Excellent</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="surf dog" data-loc="north">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/4756436/pexels-photo-4756436.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <div class="card-badges">
+          <span class="badge badge-gold">Best Surf</span>
+        </div>
+      </div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">North Devon</div>
+        <h3>Croyde Bay</h3>
+        <p>Devon's premier surf beach — a compact horseshoe bay with powerful beach breaks, a legendary village surf scene, and Baggy Point on the doorstep. Iconic for a reason.</p>
+        <div class="card-features">
+          <span class="feat feat-surf">🏄 Premier Surf</span>
+          <span class="feat feat-dog">🐶 Dogs off-season</span>
+        </div>
+      </div>
+      <a href="#" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.8 · Excellent</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="surf dog family swim" data-loc="north">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/14423081/pexels-photo-14423081.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <div class="card-badges">
+          <span class="badge">3 Miles</span>
+          <span class="badge">UNESCO</span>
+        </div>
+      </div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">North Devon</div>
+        <h3>Saunton Sands</h3>
+        <p>Three miles of flat, wide sand backed by the UNESCO-listed Braunton Burrows dunes. Reliable surf, spectacular sunsets, and a dog-friendly southern section year-round.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Dogs (south)</span>
+          <span class="feat feat-surf">🏄 Surf</span>
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+        </div>
+      </div>
+      <a href="dog-friendly-beaches-north-devon.html" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.9 · Excellent</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog quiet rockpool" data-loc="north">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/638369/pexels-photo-638369.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">Near Woolacombe</div>
+        <h3>Barricane Beach</h3>
+        <p>A tiny shell cove north of Woolacombe — famous for exotic Caribbean shells washed in on the Gulf Stream, exceptional rock pools, and dogs always welcome year-round.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Year-round</span>
+          <span class="feat">🐚 Shells</span>
+          <span class="feat feat-swim">🦀 Rock Pools</span>
+        </div>
+      </div>
+      <a href="dog-friendly-beaches-north-devon.html#barricane" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.7 · Great</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog surf family" data-loc="north">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/12434570/pexels-photo-12434570.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">North Devon</div>
+        <h3>Putsborough Sands</h3>
+        <p>The quieter southern neighbour to Croyde — backed by dunes and accessed via a farm track. Dogs welcome year-round on the northern section, manageable surf for improvers.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Year-round (north)</span>
+          <span class="feat feat-surf">🏄 Surf</span>
+          <span class="feat">🤫 Quieter</span>
+        </div>
+      </div>
+      <a href="dog-friendly-beaches-north-devon.html#putsborough" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.6 · Great</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog family" data-loc="north">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/35276170/pexels-photo-35276170.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">North Devon</div>
+        <h3>Westward Ho!</h3>
+        <p>A classic resort beach with a spectacular pebble ridge. Northam Burrows Country Park adjacent — unrestricted for dogs year-round, and a fantastic walking spot at any tide.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Dogs (pebble ridge)</span>
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+          <span class="feat">🅿️ Good Parking</span>
+        </div>
+      </div>
+      <a href="dog-friendly-beaches-north-devon.html#westward" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.3 · Good</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog swim quiet" data-loc="north">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/7487513/pexels-photo-7487513.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">Torridge Estuary</div>
+        <h3>Instow</h3>
+        <p>A charming estuary village with golden sand at low tide. Calmer water than the Atlantic beaches — ideal for families and dogs who prefer a gentler dip. Ferry to Appledore.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Dogs (sections)</span>
+          <span class="feat feat-swim">🏊 Estuary Swim</span>
+          <span class="feat">⛵ Sailing Views</span>
+        </div>
+      </div>
+      <a href="dog-friendly-beaches-north-devon.html#instow" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.5 · Great</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog family rockpool swim" data-loc="north">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/4685024/pexels-photo-4685024.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">Ilfracombe</div>
+        <h3>Tunnels Beaches</h3>
+        <p>A Victorian marvel — private tidal pools accessed through hand-carved tunnels. Families love the safe, enclosed sea bathing pools. Separate dog pool available. Entry fee applies.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Dog pool</span>
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+          <span class="feat feat-swim">🏊 Tidal Pools</span>
+          <span class="feat">🎟️ Entry fee</span>
+        </div>
+      </div>
+      <a href="#" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.6 · Great</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog family rockpool quiet" data-loc="north">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/4437831/pexels-photo-4437831.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">Ilfracombe</div>
+        <h3>Hele Bay</h3>
+        <p>A sheltered shingle and rock bay just east of Ilfracombe. Excellent rock pools at low tide, calmer water than the open coast, and dogs welcome year-round. A local favourite.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Year-round</span>
+          <span class="feat">🦀 Rock Pools</span>
+          <span class="feat">🤫 Quiet</span>
+        </div>
+      </div>
+      <a href="#" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.4 · Good</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog family" data-loc="north">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/638369/pexels-photo-638369.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">North Devon</div>
+        <h3>Combe Martin Beach</h3>
+        <p>A small, sheltered beach at the mouth of the beautiful Combe Martin Valley. Rocky and authentic — dogs welcome all year, and the village pub is a short stroll away.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Year-round</span>
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+          <span class="feat">🍺 Pub nearby</span>
+        </div>
+      </div>
+      <a href="#" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.2 · Good</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog quiet rockpool" data-loc="north">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/12434570/pexels-photo-12434570.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <div class="card-badges">
+          <span class="badge">End of the Road</span>
+        </div>
+      </div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">Far North Devon</div>
+        <h3>Hartland Quay</h3>
+        <p>One of Devon's most dramatic spots — a rugged rocky beach beneath savage cliffs at the very tip of North Devon. Dogs year-round, historic hotel above, no crowds. Pure wild.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Year-round</span>
+          <span class="feat">🌊 Wild &amp; Remote</span>
+          <span class="feat">🦀 Rock Pools</span>
+        </div>
+      </div>
+      <a href="#" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.7 · Great</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="quiet rockpool family" data-loc="north">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/4685024/pexels-photo-4685024.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <div class="card-badges">
+          <span class="badge">Marine Reserve</span>
+        </div>
+      </div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">Off North Devon</div>
+        <h3>Lundy Island</h3>
+        <p>England's only official marine conservation zone — a remote island a boat trip from Ilfracombe, with dramatic coves, grey seal colonies, puffins, and exceptional diving.</p>
+        <div class="card-features">
+          <span class="feat">🦭 Seals</span>
+          <span class="feat">🤿 Diving</span>
+          <span class="feat">🐦 Puffins</span>
+          <span class="feat">⭐ Unique</span>
+        </div>
+      </div>
+      <a href="#" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.9 · Exceptional</div>
+      </a>
+    </div>
+
+  </div><!-- end north beach-grid -->
+
+  <!-- ===== SOUTH DEVON ===== -->
+  <div class="region-header reveal" data-region="south">
+    <h2>South Devon &amp; South Hams</h2>
+    <div class="region-line"></div>
+    <span class="region-count">14 beaches</span>
+  </div>
+
+  <div class="beach-grid">
+
+    <div class="beach-card reveal" data-tags="surf dog family swim" data-loc="south">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/20870311/pexels-photo-20870311.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <div class="card-badges">
+          <span class="badge badge-gold">Top Pick</span>
+        </div>
+      </div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">South Hams</div>
+        <h3>Bantham</h3>
+        <p>The finest beach in South Devon — powerful surf, beautiful dune backing, and the warm Avon Estuary lagoon for paddling. Often voted one of England's best beaches. Dogs year-round.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Year-round</span>
+          <span class="feat feat-surf">🏄 Surf</span>
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+          <span class="feat feat-swim">🏊 Estuary lagoon</span>
+        </div>
+      </div>
+      <a href="bantham-beach.html" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.9 · Excellent</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="swim quiet family" data-loc="south">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/4437831/pexels-photo-4437831.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <div class="card-badges">
+          <span class="badge badge-gold">Crystal Clear</span>
+        </div>
+      </div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">Near Dartmouth</div>
+        <h3>Blackpool Sands</h3>
+        <p>A horseshoe bay of shingle and sand between wooded headlands — the water is genuinely Caribbean clear. Award-winning Venus Café on site. No dogs in summer.</p>
+        <div class="card-features">
+          <span class="feat feat-swim">🏊 Crystal Water</span>
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+          <span class="feat">☕ Venus Café</span>
+          <span class="feat">🏆 Award-winning</span>
+        </div>
+      </div>
+      <a href="blackpool-sands-devon.html" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.9 · Excellent</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="surf dog family swim" data-loc="south">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/4756436/pexels-photo-4756436.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">South Devon</div>
+        <h3>Bigbury-on-Sea</h3>
+        <p>A compact surf beach at the mouth of the Avon, facing Burgh Island. Great for beginner surfers and families, with the iconic sea-tractor ride to Burgh Island next door.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Dogs</span>
+          <span class="feat feat-surf">🏄 Beginner Surf</span>
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+        </div>
+      </div>
+      <a href="#" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.6 · Great</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="swim quiet rockpool family" data-loc="south">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/4437831/pexels-photo-4437831.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">South Devon</div>
+        <h3>Burgh Island</h3>
+        <p>One of Devon's most photographed spots — a tidal island reached on foot or by sea tractor. Rock pools, art deco hotel, The Pilchard Inn, and superb views across Start Bay.</p>
+        <div class="card-features">
+          <span class="feat feat-swim">🏊 Swimming</span>
+          <span class="feat">🦀 Rock Pools</span>
+          <span class="feat">⭐ Unique</span>
+          <span class="feat">🍺 The Pilchard Inn</span>
+        </div>
+      </div>
+      <a href="#" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.8 · Excellent</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="swim quiet family dog" data-loc="south">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/7487513/pexels-photo-7487513.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">South Hams</div>
+        <h3>Salcombe Estuary Beaches</h3>
+        <p>North Sands, South Sands, Mill Bay — the Salcombe estuary beaches offer turquoise water, gentle swimming, and some of the warmest sea temperatures in England.</p>
+        <div class="card-features">
+          <span class="feat feat-swim">🏊 Warm Water</span>
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+          <span class="feat feat-dog">🐶 Dogs</span>
+          <span class="feat">⛵ Ferry links</span>
+        </div>
+      </div>
+      <a href="south-devon-beaches.html#salcombe" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.8 · Excellent</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog swim quiet family" data-loc="south">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/29352700/pexels-photo-29352700.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">South Hams</div>
+        <h3>Hope Cove</h3>
+        <p>A beautiful, sheltered fishing village with two coves — Inner Hope and Outer Hope. Dogs welcome year-round, calm water for swimming, and a stunning clifftop walk to Bolt Tail.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Year-round</span>
+          <span class="feat feat-swim">🏊 Sheltered</span>
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+          <span class="feat">🚶 Coastal walks</span>
+        </div>
+      </div>
+      <a href="south-devon-beaches.html#hopecove" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.7 · Great</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog swim family rockpool" data-loc="south">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/14423081/pexels-photo-14423081.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">South Hams</div>
+        <h3>Thurlestone Beach</h3>
+        <p>Famous for the natural rock arch offshore — a beautiful, AONB-protected beach near Salcombe. Good swimming, rock pools, dogs welcome, and the Thurlestone Hotel above for a treat.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Dogs</span>
+          <span class="feat feat-swim">🏊 Swimming</span>
+          <span class="feat">🏗️ Arch Rock</span>
+          <span class="feat">🦀 Rock Pools</span>
+        </div>
+      </div>
+      <a href="south-devon-beaches.html#thurlestone" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.7 · Great</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog family swim" data-loc="south">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/35276170/pexels-photo-35276170.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">South Hams</div>
+        <h3>South Milton Sands</h3>
+        <p>Also known as Thurlestone Sands — a wide, sandy beach with lifeguards, a good café, and easy parking. One of the most accessible family beaches on the South Hams coast.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Dogs</span>
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+          <span class="feat feat-swim">🏊 Lifeguards</span>
+          <span class="feat">🅿️ Easy parking</span>
+        </div>
+      </div>
+      <a href="south-devon-beaches.html#southmilton" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.5 · Great</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog quiet swim" data-loc="south">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/638369/pexels-photo-638369.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <div class="card-badges">
+          <span class="badge">NT Land</span>
+        </div>
+      </div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">South Hams</div>
+        <h3>Soar Mill Cove</h3>
+        <p>A completely unspoilt, remote cove accessed on foot only — one mile from the road. No facilities, no crowds, National Trust land on all sides. Wild swimming at its finest.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Year-round</span>
+          <span class="feat">🤫 Very Remote</span>
+          <span class="feat feat-swim">🏊 Wild Swim</span>
+        </div>
+      </div>
+      <a href="south-devon-beaches.html#soarmill" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.8 · Excellent</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog quiet" data-loc="south">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/7487513/pexels-photo-7487513.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">South Hams</div>
+        <h3>Mothecombe (Erme Mouth)</h3>
+        <p>A private estate beach open to the public Wednesday and weekends. Where the River Erme meets the sea — remote, tidal, beautiful. Dogs year-round, virtually no facilities.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Year-round</span>
+          <span class="feat">🤫 Very Quiet</span>
+          <span class="feat">📅 Wed &amp; weekends</span>
+        </div>
+      </div>
+      <a href="south-devon-beaches.html#mothecombe" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.6 · Great</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog quiet family" data-loc="south">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/4685024/pexels-photo-4685024.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <div class="card-badges">
+          <span class="badge">3 Miles</span>
+          <span class="badge">Sherman Tank</span>
+        </div>
+      </div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">Start Bay</div>
+        <h3>Slapton Sands</h3>
+        <p>Three miles of wild, shingle barrier beach with freshwater Slapton Ley behind — a unique landscape. Sherman tank memorial, dogs year-round, incredible for wildlife and walking.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Year-round</span>
+          <span class="feat">🦆 Wildlife</span>
+          <span class="feat">🌊 Wild</span>
+          <span class="feat feat-family">👨‍👩‍👧 Walking</span>
+        </div>
+      </div>
+      <a href="south-devon-beaches.html#slapton" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.6 · Great</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog quiet family" data-loc="south">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/12434570/pexels-photo-12434570.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">Start Bay</div>
+        <h3>Beesands</h3>
+        <p>A tiny, authentic fishing village beach — boats still launch from here, the cricket club backs onto the shingle, and it barely appears on tourist maps. Utterly local and lovely.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Dogs</span>
+          <span class="feat">🐟 Fishing boats</span>
+          <span class="feat">🤫 Quiet</span>
+        </div>
+      </div>
+      <a href="south-devon-beaches.html#beesands" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.5 · Great</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog quiet family swim" data-loc="south">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/638369/pexels-photo-638369.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">Start Bay</div>
+        <h3>Torcross</h3>
+        <p>The dramatic southern end of Slapton Sands — park almost on the beach, watch the waves crash, then walk north along one of England's most unusual coastal landscapes.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Dogs</span>
+          <span class="feat">🪖 Sherman Tank</span>
+          <span class="feat feat-family">👨‍👩‍👧 Walking</span>
+        </div>
+      </div>
+      <a href="south-devon-beaches.html#torcross" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.4 · Good</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog family swim quiet" data-loc="south">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/4756436/pexels-photo-4756436.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">Start Bay</div>
+        <h3>Teignmouth Main Beach</h3>
+        <p>Traditional Devon resort with a long sandy and shingle beach, a Victorian pier, and great facilities. Dogs allowed year-round on the Den section — the estuary mouth is fun to explore.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Dogs (Den)</span>
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+          <span class="feat">🏛️ Victorian Pier</span>
+          <span class="feat feat-swim">🏊 Swimming</span>
+        </div>
+      </div>
+      <a href="south-devon-beaches.html#teignmouth" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.2 · Good</div>
+      </a>
+    </div>
+
+  </div><!-- end south beach-grid -->
+
+  <div class="ad-slot">Advertisement</div>
+
+  <!-- ARTICLE PROMOS -->
+  <a href="south-devon-beaches.html" class="article-promo reveal" style="text-decoration:none; background: linear-gradient(135deg, #1a3a50, #2d6b7a);">
+    <div class="promo-emoji">🌊</div>
+    <div class="promo-content">
+      <div class="promo-tag">Featured Guide</div>
+      <h3>The best beaches in South Devon — complete 2025 guide</h3>
+      <p>Bantham to Blackpool Sands, Hope Cove to Slapton — everything you need to explore South Devon's coastline.</p>
+    </div>
+    <span class="promo-btn">Read the Guide →</span>
+  </a>
+
+  <!-- ===== TORBAY ===== -->
+  <div class="region-header reveal" data-region="torbay">
+    <h2>Torbay — The English Riviera</h2>
+    <div class="region-line"></div>
+    <span class="region-count">9 beaches</span>
+  </div>
+
+  <div class="beach-grid">
+
+    <div class="beach-card reveal" data-tags="family swim dog" data-loc="torbay">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/20870311/pexels-photo-20870311.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <div class="card-badges">
+          <span class="badge">Iconic Resort</span>
+        </div>
+      </div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">Torbay</div>
+        <h3>Paignton Sands</h3>
+        <p>The heart of Torbay — a long, golden beach with Paignton Pier, amusements, a donkey ride, and all the trappings of a classic English seaside holiday. Great for families.</p>
+        <div class="card-features">
+          <span class="feat feat-family">👨‍👩‍👧 Classic Resort</span>
+          <span class="feat feat-swim">🏊 Lifeguards</span>
+          <span class="feat feat-dog">🐶 Dogs (ends)</span>
+        </div>
+      </div>
+      <a href="#" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.3 · Good</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="family swim rockpool" data-loc="torbay">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/14423081/pexels-photo-14423081.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">Torbay</div>
+        <h3>Goodrington Sands</h3>
+        <p>The quieter south end of Paignton — split into north and south sections, with great rock pools, a splash zone water park nearby, and a gentler feel than the main beach.</p>
+        <div class="card-features">
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+          <span class="feat">🦀 Rock Pools</span>
+          <span class="feat feat-swim">🏊 Swimming</span>
+          <span class="feat">🎢 Water park</span>
+        </div>
+      </div>
+      <a href="#" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.4 · Good</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="family swim dog" data-loc="torbay">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/35276170/pexels-photo-35276170.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">Torbay</div>
+        <h3>Broadsands Beach</h3>
+        <p>A sheltered, south-facing beach with calm water that warms quickly in summer — perfect for young children. Rock pools at each end, dogs welcome on parts of the beach.</p>
+        <div class="card-features">
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+          <span class="feat feat-swim">🏊 Calm water</span>
+          <span class="feat feat-dog">🐶 Dogs (sections)</span>
+        </div>
+      </div>
+      <a href="#" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.4 · Good</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="family swim" data-loc="torbay">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/7487513/pexels-photo-7487513.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <div class="card-badges">
+          <span class="badge">Palm Trees</span>
+        </div>
+      </div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">Torquay</div>
+        <h3>Torre Abbey Sands</h3>
+        <p>Central Torquay's main beach, backed by the Riviera promenade and palm trees — the most southerly beach in Devon, reliably warm, and ideal for a sunny resort day.</p>
+        <div class="card-features">
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+          <span class="feat feat-swim">🏊 Lifeguards</span>
+          <span class="feat">🌴 Riviera feel</span>
+        </div>
+      </div>
+      <a href="#" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.3 · Good</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="swim quiet family" data-loc="torbay">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/4437831/pexels-photo-4437831.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">Torquay</div>
+        <h3>Meadfoot Beach</h3>
+        <p>Torquay's hidden gem — a sheltered shingle beach 10 minutes from the town centre, but feeling worlds away. Good snorkelling, good swimming, Art Nouveau beach huts, little café.</p>
+        <div class="card-features">
+          <span class="feat feat-swim">🏊 Good swimming</span>
+          <span class="feat">🤿 Snorkelling</span>
+          <span class="feat">🤫 Quieter</span>
+        </div>
+      </div>
+      <a href="#" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.5 · Great</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="swim quiet rockpool" data-loc="torbay">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/4685024/pexels-photo-4685024.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <div class="card-badges">
+          <span class="badge">Cliff Railway</span>
+        </div>
+      </div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">Torquay</div>
+        <h3>Babbacombe &amp; Oddicombe</h3>
+        <p>Reached by a unique cliff railway from Babbacombe Downs — a scenic descent to a sheltered cove with exceptional snorkelling, a café, and one of Torbay's best kept secrets.</p>
+        <div class="card-features">
+          <span class="feat">🚡 Cliff railway</span>
+          <span class="feat feat-swim">🏊 Snorkelling</span>
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+        </div>
+      </div>
+      <a href="#" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.6 · Great</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="swim quiet rockpool" data-loc="torbay">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/638369/pexels-photo-638369.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">Torquay</div>
+        <h3>Anstey's Cove</h3>
+        <p>Walk-in only — a beautifully clear, sheltered cove with overhanging limestone cliffs, sea caves, and some of the cleanest water in the bay. Kayaks for hire in season.</p>
+        <div class="card-features">
+          <span class="feat>🤫 Walk-in only</span>
+          <span class="feat feat-swim">🏊 Clear water</span>
+          <span class="feat">🚣 Kayak hire</span>
+          <span class="feat">🪨 Sea caves</span>
+        </div>
+      </div>
+      <a href="#" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.6 · Great</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog family swim" data-loc="torbay">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/12434570/pexels-photo-12434570.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">Near Teignmouth</div>
+        <h3>Dawlish Warren</h3>
+        <p>A sand spit nature reserve stretching across the Exe Estuary mouth — brilliant for families, birdwatching, swimming, and fairground fun. Train from Exeter runs right beside the beach.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Dogs (restricted)</span>
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+          <span class="feat feat-swim">🏊 Swimming</span>
+          <span class="feat">🦆 Nature Reserve</span>
+        </div>
+      </div>
+      <a href="#" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.3 · Good</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="surf dog family swim" data-loc="torbay">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/20870311/pexels-photo-20870311.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">Torbay</div>
+        <h3>Exmouth Main Beach</h3>
+        <p>Two miles of sand — one of Devon's longest beaches. Great for kitesurfing, watersports, and family swimming. Easy train access from Exeter on the Avocet Line. Dogs on Maer end.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Dogs (Maer end)</span>
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+          <span class="feat feat-swim">🏊 Lifeguards</span>
+          <span class="feat">🪁 Kitesurfing</span>
+        </div>
+      </div>
+      <a href="east-devon-beaches.html#exmouth" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.5 · Great</div>
+      </a>
+    </div>
+
+  </div><!-- end torbay beach-grid -->
+
+  <!-- ===== EAST DEVON ===== -->
+  <div class="region-header reveal" data-region="east">
+    <h2>East Devon &amp; the Jurassic Coast</h2>
+    <div class="region-line"></div>
+    <span class="region-count">7 beaches</span>
+  </div>
+
+  <div class="beach-grid">
+
+    <div class="beach-card reveal" data-tags="dog quiet" data-loc="east">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/35276170/pexels-photo-35276170.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">East Devon</div>
+        <h3>Budleigh Salterton</h3>
+        <p>A pebble beach of rare quiet and character — framed by red cliffs, no seasonal dog bans, and the mouth of the Otter Estuary at one end. Famous for the Millais painting set here.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Year-round</span>
+          <span class="feat">🪨 Pebble beach</span>
+          <span class="feat">🦅 Otter Estuary</span>
+          <span class="feat">🤫 Quiet</span>
+        </div>
+      </div>
+      <a href="east-devon-beaches.html#budleigh" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.4 · Good</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="quiet rockpool family" data-loc="east">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/4437831/pexels-photo-4437831.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <div class="card-badges">
+          <span class="badge">UNESCO Heritage</span>
+        </div>
+      </div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">East Devon · Jurassic Coast</div>
+        <h3>Ladram Bay</h3>
+        <p>Dramatic red Triassic sandstone sea stacks on the Jurassic Coast — a sheltered cove with incredible fossil hunting, excellent rock pools, and an unusual, vivid landscape.</p>
+        <div class="card-features">
+          <span class="feat">🪸 Jurassic Coast</span>
+          <span class="feat">🦕 Fossil Hunting</span>
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+          <span class="feat">🦀 Rock Pools</span>
+        </div>
+      </div>
+      <a href="east-devon-beaches.html#ladram" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.7 · Great</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog family swim" data-loc="east">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/35276170/pexels-photo-35276170.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">East Devon</div>
+        <h3>Sidmouth Beach</h3>
+        <p>A classic Regency seaside town with a long shingle and sand beach framed by dramatic red cliffs. Jacob's Ladder at the western end is quieter with a historic cliff lift.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Dogs (west end)</span>
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+          <span class="feat feat-swim">🏊 Swimming</span>
+          <span class="feat">🏛️ Historic town</span>
+        </div>
+      </div>
+      <a href="east-devon-beaches.html#sidmouth" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.5 · Great</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog quiet rockpool" data-loc="east">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/638369/pexels-photo-638369.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <div class="card-badges">
+          <span class="badge">NT</span>
+        </div>
+      </div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">East Devon · Jurassic Coast</div>
+        <h3>Branscombe Beach</h3>
+        <p>A remote, wooded valley meets the sea — one of Devon's most unspoilt beaches. Walk in from the National Trust village with its thatched buildings and old working forge.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Year-round</span>
+          <span class="feat">🤫 Very Remote</span>
+          <span class="feat">🦀 Rock Pools</span>
+          <span class="feat">🌿 NT land</span>
+        </div>
+      </div>
+      <a href="east-devon-beaches.html#branscombe" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.6 · Great</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog family rockpool swim" data-loc="east">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/4437831/pexels-photo-4437831.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">East Devon · Jurassic Coast</div>
+        <h3>Beer Beach</h3>
+        <p>A working fishing beach in a sheltered cove — boats still launch from the shingle daily. Fresh fish sold on the beach, excellent rock pools, and a charming village behind.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Dogs (off-season)</span>
+          <span class="feat">🐟 Fishing village</span>
+          <span class="feat">🦀 Rock Pools</span>
+          <span class="feat feat-swim">🏊 Sheltered</span>
+        </div>
+      </div>
+      <a href="east-devon-beaches.html#beer" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.5 · Great</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="dog family" data-loc="east">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/7487513/pexels-photo-7487513.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">East Devon</div>
+        <h3>Seaton Beach</h3>
+        <p>A long shingle beach at the mouth of the Axe Valley — best known for the Seaton Tramway electric trams, the Axe Estuary wetlands, and a relaxed, unhurried atmosphere.</p>
+        <div class="card-features">
+          <span class="feat feat-dog">🐶 Year-round</span>
+          <span class="feat feat-family">👨‍👩‍👧 Tram &amp; families</span>
+          <span class="feat">🦆 Birdwatching</span>
+        </div>
+      </div>
+      <a href="east-devon-beaches.html#seaton" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.2 · Good</div>
+      </a>
+    </div>
+
+    <div class="beach-card reveal" data-tags="quiet rockpool family" data-loc="east">
+      <div class="beach-card-img" style="background-image: url('https://images.pexels.com/photos/4685024/pexels-photo-4685024.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <div class="card-badges">
+          <span class="badge">Fossil Hunting</span>
+        </div>
+      </div>
+      <div class="beach-card-body">
+        <div class="beach-card-location">East Devon · Jurassic Coast</div>
+        <h3>Charmouth &amp; Lyme Area</h3>
+        <p>Just across the Devon–Dorset border — the world's most famous fossil beach. After storms, ammonites and ichthyosaur bones wash out of the Blue Lias cliffs. Unmissable for fossil fans.</p>
+        <div class="card-features">
+          <span class="feat">🦕 World-class fossils</span>
+          <span class="feat feat-family">👨‍👩‍👧 Families</span>
+          <span class="feat">🪸 Jurassic Coast</span>
+        </div>
+      </div>
+      <a href="east-devon-beaches.html#charmouth" class="card-link">
+        <span>Full guide →</span>
+        <div class="card-rating">⭐ 4.8 · Excellent</div>
+      </a>
+    </div>
+
+    <!-- NO RESULTS -->
+    <div class="no-results" id="no-results">
+      <h3>No beaches match those filters</h3>
+      <p>Try removing a filter to see more results.</p>
+    </div>
+
+  </div><!-- end east beach-grid -->
+
+  <div class="ad-slot">Advertisement</div>
+
+  <!-- FEATURED ARTICLE PROMOS -->
+  <a href="dog-friendly-beaches-north-devon.html" class="article-promo reveal" style="text-decoration:none;">
+    <div class="promo-emoji">🐾</div>
+    <div class="promo-content">
+      <div class="promo-tag">Featured Guide</div>
+      <h3>The best dog friendly beaches in North Devon — full guide</h3>
+      <p>Year-round beaches, seasonal rules, parking tips, and the best nearby pubs for you and your dog.</p>
+    </div>
+    <span class="promo-btn">Read the Guide →</span>
+  </a>
+
+  <a href="bantham-beach.html" class="article-promo reveal" style="text-decoration:none; background: linear-gradient(135deg, #1a4520, #2d7a30);">
+    <div class="promo-emoji">🏄</div>
+    <div class="promo-content">
+      <div class="promo-tag">Beach Guide</div>
+      <h3>Bantham Beach — the complete South Devon guide</h3>
+      <p>Surf, estuary swimming, tide times, parking, the best pub nearby, and everything else you need.</p>
+    </div>
+    <span class="promo-btn">Read the Guide →</span>
+  </a>
+
+  <a href="east-devon-beaches.html" class="article-promo reveal" style="text-decoration:none; background: linear-gradient(135deg, #4a2a10, #8a4a1a);">
+    <div class="promo-emoji">🦕</div>
+    <div class="promo-content">
+      <div class="promo-tag">Featured Guide</div>
+      <h3>East Devon &amp; the Jurassic Coast — beaches guide</h3>
+      <p>185 million years of geology, fossil hunting, Exmouth to Seaton — the complete Jurassic Coast beach guide.</p>
+    </div>
+    <span class="promo-btn">Read the Guide →</span>
+  </a>
+
+  <a href="wild-swimming-dartmoor.html" class="article-promo reveal" style="text-decoration:none; background: linear-gradient(135deg, #1a3420, #2d5a27);">
+    <div class="promo-emoji">🏊</div>
+    <div class="promo-content">
+      <div class="promo-tag">Featured Guide</div>
+      <h3>Wild swimming on Dartmoor — the complete guide</h3>
+      <p>River pools, gorge swims, and the best moorland plunge spots in the South West.</p>
+    </div>
+    <span class="promo-btn">Read the Guide →</span>
+  </a>
+
+</div><!-- end beaches-layout -->
+
+<!-- NEWSLETTER -->
+<section class="newsletter-strip">
+  <p class="label">Stay in the loop</p>
+  <h2>New beach guides, every week</h2>
+  <p>Get our latest Devon guides straight to your inbox. No spam, unsubscribe anytime.</p>
+  <div class="nl-form">
+    <input type="email" placeholder="your@email.com" id="nl-email">
+    <button id="nl-btn">Subscribe</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="devon-outdoor-guide.html" class="logo">Wild<span>Devon</span></a>
+      <p>Your independent guide to the best of Devon and the South West outdoors. Written by locals, for explorers.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="devon-beaches.html">All Beaches</a></li>
+        <li><a href="south-devon-beaches.html">South Devon Beaches</a></li>
+        <li><a href="east-devon-beaches.html">East Devon &amp; Jurassic Coast</a></li>
+        <li><a href="wild-swimming-dartmoor.html">Wild Swimming</a></li>
+        <li><a href="#">Coastal Walks</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Beaches</h5>
+      <ul>
+        <li><a href="bantham-beach.html">Bantham Beach</a></li>
+        <li><a href="blackpool-sands-devon.html">Blackpool Sands</a></li>
+        <li><a href="dog-friendly-beaches-north-devon.html">Dog Friendly North Devon</a></li>
+        <li><a href="#">Croyde Bay</a></li>
+        <li><a href="#">Woolacombe</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Info</h5>
+      <ul>
+        <li><a href="#">About WildDevon</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Affiliate Disclosure</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 WildDevon.co.uk — Made with love in Devon</p>
+    <p>Independent &amp; ad-supported</p>
+  </div>
+</footer>
+
+<script>
+  // ---- FILTER SYSTEM ----
+  // Collect all beach cards across all grids
+  const cards = document.querySelectorAll('.beach-card');
+  const noResults = document.getElementById('no-results');
+  const resultCount = document.getElementById('result-count');
+
+  let activeFilter = 'all';
+  let activeLoc = 'all';
+
+  function updateCards() {
+    let visible = 0;
+    cards.forEach(card => {
+      const tags = card.dataset.tags || '';
+      const loc = card.dataset.loc || '';
+      const filterMatch = activeFilter === 'all' || tags.includes(activeFilter);
+      const locMatch = activeLoc === 'all' || loc === activeLoc;
+
+      if (filterMatch && locMatch) {
+        card.classList.remove('hidden');
+        visible++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    resultCount.textContent = visible;
+    if (noResults) noResults.style.display = visible === 0 ? 'block' : 'none';
+
+    // Show/hide region headers
+    document.querySelectorAll('.region-header').forEach(header => {
+      const region = header.dataset.region;
+      if (!region) return;
+      let regionVisible = false;
+      cards.forEach(card => {
+        if (card.dataset.loc === region && !card.classList.contains('hidden')) regionVisible = true;
+      });
+      header.style.display = (regionVisible || activeLoc === 'all') && (activeFilter === 'all' || regionVisible) ? 'flex' : 'none';
+    });
+  }
+
+  // Feature filter buttons
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeFilter = btn.dataset.filter;
+      updateCards();
+    });
+  });
+
+  // Location pills
+  document.querySelectorAll('.loc-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('.loc-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      activeLoc = pill.dataset.loc;
+      updateCards();
+    });
+  });
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 40);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.06, rootMargin: '0px 0px -30px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Newsletter
+  document.getElementById('nl-btn').addEventListener('click', () => {
+    const input = document.getElementById('nl-email');
+    if (input.value.includes('@')) {
+      input.value = '';
+      input.placeholder = '✓ Subscribed — thanks!';
+      input.style.borderColor = 'rgba(45,125,138,0.6)';
+    }
+  });
+
+  // Init count
+  resultCount.textContent = cards.length;
+</script>
+
+</body>
+</html>
