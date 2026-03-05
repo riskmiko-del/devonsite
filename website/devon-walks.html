@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devon Walks Guide 2026 — Best Walks in Devon | WildDevon</title>
+<meta name="description" content="The best walks in Devon — Dartmoor tors, South West Coast Path, woodland waterfalls and family trails. Filter by area, difficulty and type. Detailed walk guides with routes, distances and tips.">
+<link rel="canonical" href="https://wilddevon.co.uk/devon-walks">
+<meta property="og:title" content="Devon Walks 2026 — The Complete Guide | WildDevon">
+<meta property="og:description" content="Best walks in Devon — coastal, moorland, woodland and family. Filter by area and difficulty. Expert guides with distances, routes and insider tips.">
+<meta property="og:type" content="website">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Devon Walks — The Complete Guide",
+  "description": "The best walks in Devon — from Dartmoor tors to the South West Coast Path. Filter by area, difficulty and type.",
+  "url": "https://wilddevon.co.uk/devon-walks",
+  "publisher": {"@type": "Organization", "name": "WildDevon", "url": "https://wilddevon.co.uk"}
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sand: #f2ead8;
+    --ocean: #1a4a5c;
+    --teal: #2d7d8a;
+    --foam: #e8f4f0;
+    --slate: #3d4f52;
+    --gold: #c8903a;
+    --cream: #faf7f0;
+    --dark: #1c2b2e;
+    --moor: #4a6741;
+    --moor-light: #e8f0e6;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--dark); overflow-x: hidden; line-height: 1.7; }
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 4rem; background: rgba(28,43,46,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--sand); letter-spacing: 0.02em; text-decoration: none; }
+  .logo span { color: var(--gold); font-style: italic; }
+  nav ul { list-style: none; display: flex; gap: 2.5rem; }
+  nav ul a { color: rgba(242,234,216,0.75); text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
+  nav ul a:hover, nav ul a.active { color: var(--sand); }
+  @media (max-width: 900px) { nav { padding: 1rem 1.5rem; } nav ul { display: none; } }
+
+  /* HERO */
+  .page-hero { padding-top: 80px; background: var(--dark); position: relative; overflow: hidden; }
+  .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse at 60% 0%, rgba(74,103,65,0.5) 0%, transparent 55%), radial-gradient(ellipse at 5% 90%, rgba(200,144,58,0.15) 0%, transparent 50%), linear-gradient(160deg, #0d1f15 0%, #1c3320 45%, #1c2b2e 100%); }
+  .hero-inner { position: relative; z-index: 2; max-width: 1100px; margin: 0 auto; padding: 5rem 4rem 4rem; }
+  .page-label { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; display: block; }
+  .page-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 900; color: var(--sand); line-height: 1.08; margin-bottom: 1.4rem; }
+  .page-hero h1 em { color: var(--gold); font-style: italic; }
+  .hero-intro { font-size: 1.12rem; color: rgba(242,234,216,0.78); max-width: 620px; line-height: 1.75; margin-bottom: 3rem; }
+  .hero-stats { display: flex; gap: 3rem; flex-wrap: wrap; }
+  .hero-stat { }
+  .hero-stat-num { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: var(--gold); display: block; line-height: 1; }
+  .hero-stat-label { font-size: 0.8rem; color: rgba(242,234,216,0.5); letter-spacing: 0.06em; margin-top: 0.3rem; }
+  @media (max-width: 700px) { .hero-inner { padding: 3.5rem 1.5rem 3rem; } .hero-stats { gap: 2rem; } }
+
+  /* CATEGORY STRIPS */
+  .cat-strips { background: var(--ocean); padding: 2.5rem 4rem; }
+  .cat-strips-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+  .cat-strip { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 1.4rem 1.6rem; text-decoration: none; transition: background 0.2s, transform 0.2s; }
+  .cat-strip:hover { background: rgba(255,255,255,0.13); transform: translateY(-2px); }
+  .cat-strip-icon { font-size: 1.6rem; display: block; margin-bottom: 0.5rem; }
+  .cat-strip-name { font-family: 'Playfair Display', serif; color: var(--sand); font-size: 1.05rem; font-weight: 700; display: block; margin-bottom: 0.2rem; }
+  .cat-strip-desc { font-size: 0.82rem; color: rgba(242,234,216,0.55); }
+  @media (max-width: 700px) { .cat-strips { padding: 2rem 1.5rem; } }
+
+  /* FILTER BAR */
+  .filter-section { background: white; border-bottom: 1px solid rgba(45,125,138,0.12); position: sticky; top: 68px; z-index: 50; }
+  .filter-inner { max-width: 1100px; margin: 0 auto; padding: 1rem 4rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+  .filter-label { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--slate); margin-right: 0.5rem; }
+  .filter-btn { background: none; border: 1.5px solid rgba(45,125,138,0.3); color: var(--slate); padding: 0.4rem 1rem; border-radius: 20px; font-family: inherit; font-size: 0.83rem; cursor: pointer; transition: all 0.18s; white-space: nowrap; }
+  .filter-btn:hover { border-color: var(--teal); color: var(--teal); }
+  .filter-btn.active { background: var(--teal); border-color: var(--teal); color: white; }
+  .filter-divider { width: 1px; height: 24px; background: rgba(45,125,138,0.2); }
+  @media (max-width: 700px) { .filter-inner { padding: 0.8rem 1.5rem; gap: 0.5rem; } }
+
+  /* WALK GRID */
+  .grid-section { max-width: 1100px; margin: 0 auto; padding: 3rem 4rem 5rem; }
+  .grid-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2rem; }
+  .grid-header h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--ocean); }
+  .grid-count { font-size: 0.85rem; color: var(--slate); }
+  .walk-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+  .walk-card { background: white; border: 1px solid rgba(45,125,138,0.1); border-radius: 14px; overflow: hidden; transition: box-shadow 0.2s, transform 0.2s; display: flex; flex-direction: column; }
+  .walk-card:hover { box-shadow: 0 8px 32px rgba(26,74,92,0.12); transform: translateY(-3px); }
+  .walk-card-img { height: 180px; background-size: cover; background-position: center; position: relative; }
+  .walk-card-difficulty { position: absolute; top: 0.75rem; right: 0.75rem; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+  .diff-easy { background: rgba(74,167,65,0.9); color: white; }
+  .diff-moderate { background: rgba(200,144,58,0.9); color: white; }
+  .diff-challenging { background: rgba(200,74,58,0.9); color: white; }
+  .walk-card-body { padding: 1.4rem; flex: 1; display: flex; flex-direction: column; }
+  .walk-card-area { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal); font-weight: 500; margin-bottom: 0.35rem; }
+  .walk-card-body h3 { font-family: 'Playfair Display', serif; color: var(--ocean); font-size: 1.15rem; margin-bottom: 0.5rem; line-height: 1.25; }
+  .walk-card-body p { font-size: 0.88rem; color: var(--slate); line-height: 1.55; flex: 1; margin-bottom: 1rem; }
+  .walk-meta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
+  .walk-meta-item { font-size: 0.78rem; color: var(--slate); }
+  .walk-meta-item strong { color: var(--dark); }
+  .card-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1.1rem; }
+  .tag { font-size: 0.7rem; padding: 0.2rem 0.6rem; border-radius: 10px; font-weight: 500; letter-spacing: 0.04em; }
+  .tag-coastal { background: rgba(45,125,138,0.1); color: var(--teal); }
+  .tag-moorland { background: rgba(74,103,65,0.1); color: var(--moor); }
+  .tag-woodland { background: rgba(100,80,40,0.1); color: #6b4f1a; }
+  .tag-family { background: rgba(200,144,58,0.1); color: var(--gold); }
+  .tag-dogs { background: rgba(26,74,92,0.08); color: var(--ocean); }
+  .tag-circular { background: rgba(61,79,82,0.08); color: var(--slate); }
+  .walk-card-link { display: block; background: var(--ocean); color: var(--sand); text-decoration: none; text-align: center; padding: 0.75rem; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.04em; transition: background 0.2s; }
+  .walk-card-link:hover { background: var(--teal); text-decoration: none; }
+  .hidden { display: none !important; }
+  @media (max-width: 700px) { .grid-section { padding: 2rem 1.5rem 3rem; } .walk-grid { grid-template-columns: 1fr; } }
+
+  /* AREA INTRO BOXES */
+  .area-intro { background: var(--moor-light); border-left: 4px solid var(--moor); border-radius: 0 10px 10px 0; padding: 1.5rem 2rem; margin-bottom: 2.5rem; }
+  .area-intro h3 { font-family: 'Playfair Display', serif; color: var(--moor); margin-bottom: 0.4rem; }
+  .area-intro p { font-size: 0.95rem; color: var(--slate); margin: 0; }
+  .area-intro.coastal { background: var(--foam); border-color: var(--teal); }
+  .area-intro.coastal h3 { color: var(--ocean); }
+
+  /* AD SLOT */
+  .ad-slot { background: var(--foam); border: 1px dashed rgba(45,125,138,0.3); border-radius: 8px; padding: 1.5rem; text-align: center; color: var(--teal); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; margin: 2.5rem 0; min-height: 90px; display: flex; align-items: center; justify-content: center; }
+
+  /* NEWSLETTER */
+  .newsletter-strip { background: var(--teal); padding: 3.5rem 4rem; text-align: center; }
+  .newsletter-strip .label { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 0.6rem; }
+  .newsletter-strip h2 { font-family: 'Playfair Display', serif; color: white; font-size: 1.9rem; margin-bottom: 0.8rem; }
+  .newsletter-strip p { color: rgba(255,255,255,0.8); max-width: 480px; margin: 0 auto 1.8rem; }
+  .nl-form { display: flex; gap: 0.6rem; max-width: 420px; margin: 0 auto; }
+  .nl-form input { flex: 1; padding: 0.75rem 1rem; border-radius: 6px; border: none; font-family: inherit; font-size: 0.95rem; }
+  .nl-form button { background: var(--gold); color: white; border: none; padding: 0.75rem 1.4rem; border-radius: 6px; font-family: inherit; font-weight: 500; cursor: pointer; white-space: nowrap; }
+  @media (max-width: 700px) { .newsletter-strip { padding: 2.5rem 1.5rem; } }
+
+  /* FOOTER */
+  footer { background: var(--dark); color: rgba(242,234,216,0.6); padding: 3rem 4rem 1.5rem; }
+  .footer-grid { max-width: 1100px; margin: 0 auto 2rem; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; }
+  .footer-brand p { font-size: 0.88rem; margin-top: 0.8rem; line-height: 1.6; }
+  .footer-col h5 { font-family: 'Playfair Display', serif; color: var(--sand); font-size: 0.95rem; margin-bottom: 1rem; }
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 0.5rem; }
+  .footer-col ul a { color: rgba(242,234,216,0.55); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+  .footer-col ul a:hover { color: var(--sand); }
+  .footer-bottom { max-width: 1100px; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.07); padding-top: 1.2rem; display: flex; justify-content: space-between; font-size: 0.78rem; }
+  @media (max-width: 700px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; } .footer-bottom { flex-direction: column; gap: 0.4rem; } footer { padding: 2.5rem 1.5rem 1.5rem; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="devon-outdoor-guide.html" class="logo">Wild<span>Devon</span></a>
+  <ul>
+    <li><a href="devon-beaches.html">Beaches</a></li>
+    <li><a href="devon-walks.html" class="active">Walks</a></li>
+    <li><a href="wild-swimming-dartmoor.html">Wild Swimming</a></li>
+    <li><a href="devon-outdoor-guide.html">Home</a></li>
+  </ul>
+</nav>
+
+<header class="page-hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="page-label">Devon Outdoors — Walks &amp; Trails</span>
+    <h1>Devon Walks<br><em>Coast, Moor &amp; Forest</em></h1>
+    <p class="hero-intro">From Dartmoor's ancient granite tors to the clifftop drama of the South West Coast Path — Devon offers some of England's most varied and spectacular walking. This is the complete guide: every great route, with distances, difficulty ratings and insider tips.</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-num">40+</span>
+        <p class="hero-stat-label">Walks covered</p>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">630mi</span>
+        <p class="hero-stat-label">Coast Path in Devon</p>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">954m</span>
+        <p class="hero-stat-label">Highest point (High Willhays)</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="cat-strips">
+  <div class="cat-strips-inner">
+    <a href="dartmoor-walks.html" class="cat-strip">
+      <span class="cat-strip-icon">⛰️</span>
+      <span class="cat-strip-name">Dartmoor Walks</span>
+      <span class="cat-strip-desc">Tors, tors and moorland wild — Haytor, Hound Tor, Yes Tor and more</span>
+    </a>
+    <a href="south-west-coast-path-devon.html" class="cat-strip">
+      <span class="cat-strip-icon">🌊</span>
+      <span class="cat-strip-name">Coast Path</span>
+      <span class="cat-strip-desc">The best sections of Devon's South West Coast Path</span>
+    </a>
+    <a href="north-devon-beaches.html" class="cat-strip">
+      <span class="cat-strip-icon">🌿</span>
+      <span class="cat-strip-name">North Devon</span>
+      <span class="cat-strip-desc">Valley of Rocks, Baggy Point, Morte Point and Exmoor fringes</span>
+    </a>
+    <a href="south-devon-beaches.html" class="cat-strip">
+      <span class="cat-strip-icon">🏖️</span>
+      <span class="cat-strip-name">South Devon</span>
+      <span class="cat-strip-desc">South Hams coast path, Salcombe to Prawle, Start Point and beyond</span>
+    </a>
+  </div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="filter-section">
+  <div class="filter-inner">
+    <span class="filter-label">Area</span>
+    <button class="filter-btn active" data-filter-area="all">All Devon</button>
+    <button class="filter-btn" data-filter-area="dartmoor">Dartmoor</button>
+    <button class="filter-btn" data-filter-area="north">North Devon</button>
+    <button class="filter-btn" data-filter-area="south">South Devon</button>
+    <button class="filter-btn" data-filter-area="east">East Devon</button>
+    <div class="filter-divider"></div>
+    <span class="filter-label">Type</span>
+    <button class="filter-btn active" data-filter-type="all">All Types</button>
+    <button class="filter-btn" data-filter-type="coastal">Coastal</button>
+    <button class="filter-btn" data-filter-type="moorland">Moorland</button>
+    <button class="filter-btn" data-filter-type="woodland">Woodland</button>
+    <button class="filter-btn" data-filter-type="family">Family</button>
+    <div class="filter-divider"></div>
+    <span class="filter-label">Difficulty</span>
+    <button class="filter-btn active" data-filter-diff="all">Any</button>
+    <button class="filter-btn" data-filter-diff="easy">Easy</button>
+    <button class="filter-btn" data-filter-diff="moderate">Moderate</button>
+    <button class="filter-btn" data-filter-diff="challenging">Challenging</button>
+  </div>
+</div>
+
+<section class="grid-section">
+  <div class="ad-slot">Advertisement</div>
+
+  <div class="grid-header">
+    <h2>All Devon Walks</h2>
+    <span class="grid-count" id="walk-count">Showing all walks</span>
+  </div>
+
+  <div class="walk-grid" id="walk-grid">
+
+    <!-- HAYTOR -->
+    <div class="walk-card" data-area="dartmoor" data-type="moorland" data-diff="easy">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <span class="walk-card-difficulty diff-easy">Easy</span>
+      </div>
+      <div class="walk-card-body">
+        <div class="walk-card-area">Dartmoor</div>
+        <h3>Haytor Walk</h3>
+        <p>Dartmoor's most iconic granite outcrop — a short, spectacular walk to the twin-peaked summit with panoramic views across the moor to the coast.</p>
+        <div class="walk-meta">
+          <span class="walk-meta-item"><strong>3.5 mi</strong> · circular</span>
+          <span class="walk-meta-item"><strong>2 hrs</strong></span>
+          <span class="walk-meta-item">📍 Haytor Vale</span>
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-moorland">Moorland</span>
+          <span class="tag tag-family">Family</span>
+          <span class="tag tag-dogs">Dogs</span>
+          <span class="tag tag-circular">Circular</span>
+        </div>
+      </div>
+      <a href="haytor-walk-dartmoor.html" class="walk-card-link">Full walk guide →</a>
+    </div>
+
+    <!-- HOUND TOR -->
+    <div class="walk-card" data-area="dartmoor" data-type="moorland" data-diff="easy">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <span class="walk-card-difficulty diff-easy">Easy</span>
+      </div>
+      <div class="walk-card-body">
+        <div class="walk-card-area">Dartmoor</div>
+        <h3>Hound Tor &amp; Greator Rocks</h3>
+        <p>Wild, atmospheric moorland walking past dramatic stacked tors and the ruins of a medieval village — one of Dartmoor's most evocative circuits.</p>
+        <div class="walk-meta">
+          <span class="walk-meta-item"><strong>4 mi</strong> · circular</span>
+          <span class="walk-meta-item"><strong>2.5 hrs</strong></span>
+          <span class="walk-meta-item">📍 Swallerton Gate</span>
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-moorland">Moorland</span>
+          <span class="tag tag-family">Family</span>
+          <span class="tag tag-dogs">Dogs</span>
+        </div>
+      </div>
+      <a href="hound-tor-walk-dartmoor.html" class="walk-card-link">Full walk guide →</a>
+    </div>
+
+    <!-- VALLEY OF ROCKS -->
+    <div class="walk-card" data-area="north" data-type="coastal" data-diff="easy">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <span class="walk-card-difficulty diff-easy">Easy</span>
+      </div>
+      <div class="walk-card-body">
+        <div class="walk-card-area">North Devon / Exmoor</div>
+        <h3>Valley of Rocks, Lynton</h3>
+        <p>Dramatic coastal rock formations, feral Cheviot goats and sea views from an extraordinary dry valley — one of North Devon's unmissable short walks.</p>
+        <div class="walk-meta">
+          <span class="walk-meta-item"><strong>3 mi</strong> · circular</span>
+          <span class="walk-meta-item"><strong>1.5 hrs</strong></span>
+          <span class="walk-meta-item">📍 Lynton</span>
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-coastal">Coastal</span>
+          <span class="tag tag-family">Family</span>
+          <span class="tag tag-dogs">Dogs</span>
+        </div>
+      </div>
+      <a href="valley-of-rocks-walk.html" class="walk-card-link">Full walk guide →</a>
+    </div>
+
+    <!-- BAGGY POINT -->
+    <div class="walk-card" data-area="north" data-type="coastal" data-diff="easy">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <span class="walk-card-difficulty diff-easy">Easy</span>
+      </div>
+      <div class="walk-card-body">
+        <div class="walk-card-area">North Devon</div>
+        <h3>Baggy Point Circular</h3>
+        <p>National Trust clifftop walking above the surf at Croyde — seals, sea cliffs and views across Bideford Bay to Lundy Island. A North Devon classic.</p>
+        <div class="walk-meta">
+          <span class="walk-meta-item"><strong>3 mi</strong> · circular</span>
+          <span class="walk-meta-item"><strong>1.5 hrs</strong></span>
+          <span class="walk-meta-item">📍 Croyde</span>
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-coastal">Coastal</span>
+          <span class="tag tag-family">Family</span>
+          <span class="tag tag-dogs">Dogs</span>
+          <span class="tag tag-circular">NT Land</span>
+        </div>
+      </div>
+      <a href="baggy-point-walk.html" class="walk-card-link">Full walk guide →</a>
+    </div>
+
+    <!-- SALCOMBE TO HOPE COVE -->
+    <div class="walk-card" data-area="south" data-type="coastal" data-diff="moderate">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <span class="walk-card-difficulty diff-moderate">Moderate</span>
+      </div>
+      <div class="walk-card-body">
+        <div class="walk-card-area">South Devon</div>
+        <h3>Salcombe to Hope Cove</h3>
+        <p>One of Devon's finest coastal walks — cliff tops, hidden coves, wildflowers in spring and the dramatic headlands of the South Hams at their best.</p>
+        <div class="walk-meta">
+          <span class="walk-meta-item"><strong>8 mi</strong> · linear</span>
+          <span class="walk-meta-item"><strong>4–5 hrs</strong></span>
+          <span class="walk-meta-item">📍 Salcombe</span>
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-coastal">Coastal</span>
+          <span class="tag tag-dogs">Dogs</span>
+        </div>
+      </div>
+      <a href="salcombe-to-hope-cove-walk.html" class="walk-card-link">Full walk guide →</a>
+    </div>
+
+    <!-- LYDFORD GORGE -->
+    <div class="walk-card" data-area="dartmoor" data-type="woodland" data-diff="moderate">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/1578750/pexels-photo-1578750.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <span class="walk-card-difficulty diff-moderate">Moderate</span>
+      </div>
+      <div class="walk-card-body">
+        <div class="walk-card-area">Dartmoor Edge</div>
+        <h3>Lydford Gorge</h3>
+        <p>Devon's deepest gorge — a dramatic river walk through ancient oak woodland to the White Lady Waterfall and the roaring Devil's Cauldron whirlpool.</p>
+        <div class="walk-meta">
+          <span class="walk-meta-item"><strong>3.5 mi</strong> · circular</span>
+          <span class="walk-meta-item"><strong>2–3 hrs</strong></span>
+          <span class="walk-meta-item">📍 Lydford</span>
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-woodland">Woodland</span>
+          <span class="tag tag-family">Family</span>
+          <span class="tag tag-circular">NT Site</span>
+        </div>
+      </div>
+      <a href="lydford-gorge-walk.html" class="walk-card-link">Full walk guide →</a>
+    </div>
+
+    <!-- YES TOR & HIGH WILLHAYS -->
+    <div class="walk-card" data-area="dartmoor" data-type="moorland" data-diff="challenging">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <span class="walk-card-difficulty diff-challenging">Challenging</span>
+      </div>
+      <div class="walk-card-body">
+        <div class="walk-card-area">Dartmoor</div>
+        <h3>Yes Tor &amp; High Willhays</h3>
+        <p>The roof of southern England — a wild moorland expedition to Dartmoor's two highest summits, with vast views on clear days and full exposure to the elements.</p>
+        <div class="walk-meta">
+          <span class="walk-meta-item"><strong>9 mi</strong> · circular</span>
+          <span class="walk-meta-item"><strong>5–6 hrs</strong></span>
+          <span class="walk-meta-item">📍 Okehampton</span>
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-moorland">Moorland</span>
+          <span class="tag tag-dogs">Dogs</span>
+        </div>
+      </div>
+      <a href="yes-tor-high-willhays-walk.html" class="walk-card-link">Full walk guide →</a>
+    </div>
+
+    <!-- PRAWLE POINT -->
+    <div class="walk-card" data-area="south" data-type="coastal" data-diff="moderate">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <span class="walk-card-difficulty diff-moderate">Moderate</span>
+      </div>
+      <div class="walk-card-body">
+        <div class="walk-card-area">South Devon</div>
+        <h3>Prawle Point Circuit</h3>
+        <p>Devon's most southerly point — a rugged coast path circuit past Gammon Head with spectacular views across the Channel and outstanding birdwatching.</p>
+        <div class="walk-meta">
+          <span class="walk-meta-item"><strong>5.5 mi</strong> · circular</span>
+          <span class="walk-meta-item"><strong>3 hrs</strong></span>
+          <span class="walk-meta-item">📍 East Prawle</span>
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-coastal">Coastal</span>
+          <span class="tag tag-dogs">Dogs</span>
+        </div>
+      </div>
+      <a href="prawle-point-walk.html" class="walk-card-link">Full walk guide →</a>
+    </div>
+
+    <!-- GOLDEN CAP (JURASSIC COAST) -->
+    <div class="walk-card" data-area="east" data-type="coastal" data-diff="moderate">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <span class="walk-card-difficulty diff-moderate">Moderate</span>
+      </div>
+      <div class="walk-card-body">
+        <div class="walk-card-area">East Devon / Jurassic Coast</div>
+        <h3>Beer Head &amp; Jurassic Cliffs</h3>
+        <p>Chalk and sandstone cliffs of the Jurassic Coast — walk east from Beer village along the dramatic cliffs to Seaton, with views to Portland Bill on clear days.</p>
+        <div class="walk-meta">
+          <span class="walk-meta-item"><strong>6 mi</strong> · linear</span>
+          <span class="walk-meta-item"><strong>3 hrs</strong></span>
+          <span class="walk-meta-item">📍 Beer</span>
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-coastal">Coastal</span>
+          <span class="tag tag-dogs">Dogs</span>
+        </div>
+      </div>
+      <a href="beer-head-walk-jurassic-coast.html" class="walk-card-link">Full walk guide →</a>
+    </div>
+
+    <!-- GOLITHA FALLS -->
+    <div class="walk-card" data-area="dartmoor" data-type="woodland" data-diff="easy">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <span class="walk-card-difficulty diff-easy">Easy</span>
+      </div>
+      <div class="walk-card-body">
+        <div class="walk-card-area">Bodmin / Dartmoor Edge</div>
+        <h3>Golitha Falls</h3>
+        <p>Ancient oak woodland along the River Fowey — waterfalls, mossy boulders and dappled light in one of the most beautiful and accessible woodland walks in the South West.</p>
+        <div class="walk-meta">
+          <span class="walk-meta-item"><strong>2 mi</strong> · circular</span>
+          <span class="walk-meta-item"><strong>1 hr</strong></span>
+          <span class="walk-meta-item">📍 Golitha, Cornwall</span>
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-woodland">Woodland</span>
+          <span class="tag tag-family">Family</span>
+          <span class="tag tag-dogs">Dogs</span>
+        </div>
+      </div>
+      <a href="golitha-falls-walk.html" class="walk-card-link">Full walk guide →</a>
+    </div>
+
+    <!-- MORTE POINT -->
+    <div class="walk-card" data-area="north" data-type="coastal" data-diff="easy">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <span class="walk-card-difficulty diff-easy">Easy</span>
+      </div>
+      <div class="walk-card-body">
+        <div class="walk-card-area">North Devon</div>
+        <h3>Morte Point</h3>
+        <p>Wild and windswept NT headland at the tip of the Mortehoe peninsula — grey seals, dramatic schist rock formations and views across Woolacombe Bay.</p>
+        <div class="walk-meta">
+          <span class="walk-meta-item"><strong>3 mi</strong> · circular</span>
+          <span class="walk-meta-item"><strong>1.5 hrs</strong></span>
+          <span class="walk-meta-item">📍 Mortehoe</span>
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-coastal">Coastal</span>
+          <span class="tag tag-family">Family</span>
+          <span class="tag tag-dogs">Dogs</span>
+          <span class="tag tag-circular">NT Land</span>
+        </div>
+      </div>
+      <a href="morte-point-walk.html" class="walk-card-link">Full walk guide →</a>
+    </div>
+
+    <!-- DARTMEET -->
+    <div class="walk-card" data-area="dartmoor" data-type="moorland" data-diff="moderate">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+        <span class="walk-card-difficulty diff-moderate">Moderate</span>
+      </div>
+      <div class="walk-card-body">
+        <div class="walk-card-area">Dartmoor</div>
+        <h3>Dartmeet &amp; the East Dart River</h3>
+        <p>The heart of Dartmoor — where the East and West Dart rivers meet in a rocky gorge. Walk upstream through ancient clapper bridges, clitters and open moorland.</p>
+        <div class="walk-meta">
+          <span class="walk-meta-item"><strong>5 mi</strong> · circular</span>
+          <span class="walk-meta-item"><strong>3 hrs</strong></span>
+          <span class="walk-meta-item">📍 Dartmeet</span>
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-moorland">Moorland</span>
+          <span class="tag tag-family">Family</span>
+          <span class="tag tag-dogs">Dogs</span>
+        </div>
+      </div>
+      <a href="dartmeet-walk-dartmoor.html" class="walk-card-link">Full walk guide →</a>
+    </div>
+
+  </div><!-- end walk-grid -->
+
+  <div class="ad-slot">Advertisement</div>
+
+</section>
+
+<section class="newsletter-strip">
+  <p class="label">Stay in the loop</p>
+  <h2>New Devon walk guides, every week</h2>
+  <p>Get our latest routes, tips and seasonal highlights straight to your inbox. No spam, unsubscribe anytime.</p>
+  <div class="nl-form">
+    <input type="email" placeholder="your@email.com" id="nl-email">
+    <button id="nl-btn">Subscribe</button>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="devon-outdoor-guide.html" class="logo">Wild<span>Devon</span></a>
+      <p>Your independent guide to the best of Devon and the South West outdoors. Written by locals, for explorers.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Walks</h5>
+      <ul>
+        <li><a href="dartmoor-walks.html">Dartmoor Walks</a></li>
+        <li><a href="south-west-coast-path-devon.html">South West Coast Path</a></li>
+        <li><a href="haytor-walk-dartmoor.html">Haytor Walk</a></li>
+        <li><a href="valley-of-rocks-walk.html">Valley of Rocks</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Beaches</h5>
+      <ul>
+        <li><a href="devon-beaches.html">All Devon Beaches</a></li>
+        <li><a href="north-devon-beaches.html">North Devon</a></li>
+        <li><a href="south-devon-beaches.html">South Devon</a></li>
+        <li><a href="east-devon-beaches.html">East Devon</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="wild-swimming-dartmoor.html">Wild Swimming</a></li>
+        <li><a href="surfing-in-devon.html">Surfing in Devon</a></li>
+        <li><a href="dog-friendly-beaches-north-devon.html">Dog Friendly</a></li>
+        <li><a href="devon-outdoor-guide.html">Home</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 WildDevon.co.uk — Made with love in Devon</p>
+    <p>Independent &amp; ad-supported</p>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.06, rootMargin: '0px 0px -30px 0px' });
+
+  // Filter logic
+  let activeArea = 'all';
+  let activeType = 'all';
+  let activeDiff = 'all';
+
+  function applyFilters() {
+    const cards = document.querySelectorAll('.walk-card');
+    let visible = 0;
+    cards.forEach(card => {
+      const area = card.dataset.area;
+      const type = card.dataset.type;
+      const diff = card.dataset.diff;
+      const show =
+        (activeArea === 'all' || area === activeArea) &&
+        (activeType === 'all' || type === activeType) &&
+        (activeDiff === 'all' || diff === activeDiff);
+      card.classList.toggle('hidden', !show);
+      if (show) visible++;
+    });
+    const countEl = document.getElementById('walk-count');
+    countEl.textContent = visible === document.querySelectorAll('.walk-card').length
+      ? 'Showing all walks'
+      : `Showing ${visible} walk${visible !== 1 ? 's' : ''}`;
+  }
+
+  document.querySelectorAll('[data-filter-area]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-filter-area]').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeArea = btn.dataset.filterArea;
+      applyFilters();
+    });
+  });
+  document.querySelectorAll('[data-filter-type]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-filter-type]').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeType = btn.dataset.filterType;
+      applyFilters();
+    });
+  });
+  document.querySelectorAll('[data-filter-diff]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-filter-diff]').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeDiff = btn.dataset.filterDiff;
+      applyFilters();
+    });
+  });
+
+  document.getElementById('nl-btn').addEventListener('click', () => {
+    const input = document.getElementById('nl-email');
+    if (input.value.includes('@')) {
+      input.value = '';
+      input.placeholder = '✓ Subscribed — thanks!';
+    }
+  });
+</script>
+</body>
+</html>
