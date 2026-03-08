@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — WildDevon</title>
+  <meta name="description" content="WildDevon's privacy policy covering cookies, Google Analytics, Google AdSense advertising, and how we handle your data.">
+  <link rel="canonical" href="https://wilddevon.co.uk/privacy-policy">
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1589297007344506" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy",
+    "url": "https://wilddevon.co.uk/privacy-policy",
+    "description": "WildDevon's privacy policy covering cookies, Google Analytics, Google AdSense advertising, and how we handle your data.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "WildDevon",
+      "url": "https://wilddevon.co.uk"
+    }
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --sand: #f2ead8;
+      --ocean: #1a4a5c;
+      --teal: #2d7d8a;
+      --foam: #e8f4f0;
+      --slate: #3d4f52;
+      --gold: #c8903a;
+      --cream: #faf7f0;
+      --dark: #1c2b2e;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--dark);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: var(--dark);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      height: 64px;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    .logo span { color: var(--gold); }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.82);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--gold); }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #fff;
+      transition: all 0.3s;
+    }
+
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 64px; left: 0; right: 0;
+        background: var(--dark);
+        padding: 1.5rem 2rem;
+        gap: 1.2rem;
+        border-top: 1px solid rgba(255,255,255,0.08);
+      }
+    }
+
+    /* ── HERO ── */
+    .article-hero {
+      padding-top: 64px;
+      background: var(--ocean);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .article-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--dark) 0%, var(--ocean) 55%, var(--teal) 100%);
+      opacity: 0.95;
+    }
+
+    .article-hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3.5rem 2rem 3rem;
+    }
+
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .breadcrumb a {
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .breadcrumb a:hover { color: var(--gold); }
+    .breadcrumb span { color: rgba(255,255,255,0.35); }
+
+    .page-label {
+      display: inline-block;
+      background: var(--gold);
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.75rem;
+      border-radius: 2px;
+      margin-bottom: 1rem;
+    }
+
+    .article-hero-inner h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: #fff;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .article-hero-inner h1 em {
+      color: var(--gold);
+      font-style: italic;
+    }
+
+    .hero-intro {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.78);
+      max-width: 640px;
+      line-height: 1.65;
+    }
+
+    /* ── MAIN CONTENT ── */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 2rem 4rem;
+    }
+
+    main h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.65rem;
+      color: var(--ocean);
+      font-weight: 700;
+      margin: 2.5rem 0 0.75rem;
+      padding-top: 0.5rem;
+      border-top: 2px solid var(--foam);
+    }
+
+    main h2:first-child {
+      margin-top: 0;
+    }
+
+    main h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.1rem;
+      color: var(--slate);
+      font-weight: 600;
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    main p {
+      margin-bottom: 1rem;
+      color: var(--slate);
+      line-height: 1.75;
+    }
+
+    main ul, main ol {
+      margin: 0.75rem 0 1.25rem 1.25rem;
+      color: var(--slate);
+    }
+
+    main ul li, main ol li {
+      margin-bottom: 0.5rem;
+      line-height: 1.7;
+    }
+
+    main a {
+      color: var(--teal);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      transition: color 0.2s;
+    }
+
+    main a:hover { color: var(--ocean); }
+
+    /* ── INFO BOX ── */
+    .info-box {
+      background: var(--foam);
+      border-left: 4px solid var(--teal);
+      border-radius: 4px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .info-box p {
+      margin-bottom: 0.5rem;
+      color: var(--slate);
+    }
+
+    .info-box p:last-child { margin-bottom: 0; }
+
+    .info-box strong {
+      color: var(--ocean);
+    }
+
+    /* ── CONTACT HIGHLIGHT ── */
+    .contact-highlight {
+      background: var(--sand);
+      border-radius: 6px;
+      padding: 1.25rem 1.5rem;
+      margin: 1rem 0;
+      display: inline-block;
+    }
+
+    .contact-highlight a {
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+
+    /* ── REVEAL ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ── NEWSLETTER ── */
+    .newsletter-strip {
+      background: var(--ocean);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .newsletter-strip h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .newsletter-strip p {
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .newsletter-form input[type="email"] {
+      flex: 1;
+      min-width: 220px;
+      padding: 0.75rem 1rem;
+      border: none;
+      border-radius: 4px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      background: #fff;
+      color: var(--dark);
+    }
+
+    .newsletter-form button {
+      padding: 0.75rem 1.5rem;
+      background: var(--gold);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+
+    .newsletter-form button:hover { background: #b07e30; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.65);
+      padding: 3rem 2rem 1.5rem;
+    }
+
+    .footer-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer-brand .logo {
+      display: inline-block;
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.875rem;
+      line-height: 1.65;
+      max-width: 240px;
+    }
+
+    .footer-col h4 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .footer-col a {
+      color: rgba(255,255,255,0.65);
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover { color: var(--gold); }
+
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 1.5rem auto 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.35);
+    }
+
+    .footer-bottom a {
+      color: rgba(255,255,255,0.45);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-bottom a:hover { color: var(--gold); }
+
+    .footer-bottom-links {
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+
+      .footer-brand {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="logo">Wild<span>Devon</span></a>
+    <button class="hamburger" aria-label="Toggle menu" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="devon-beaches.html">Beaches</a></li>
+      <li><a href="devon-walks.html">Walks</a></li>
+      <li><a href="wild-swimming-devon.html">Wild Swimming</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="article-hero">
+    <div class="article-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Privacy Policy</span>
+      </div>
+      <div class="page-label">Legal</div>
+      <h1>Privacy Policy</h1>
+      <p class="hero-intro">This policy explains how WildDevon collects, uses and protects any information when you use this website. Last updated: March 2026.</p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <section class="reveal">
+      <h2>Who We Are</h2>
+      <p>WildDevon (<a href="https://wilddevon.co.uk">wilddevon.co.uk</a>) is an independent outdoor guide to Devon and the South West of England. We are not a registered company — WildDevon is an independent publishing website operated by an individual.</p>
+      <p>For any privacy-related queries, please contact us at: <a href="mailto:hello@wilddevon.co.uk">hello@wilddevon.co.uk</a></p>
+    </section>
+
+    <section class="reveal">
+      <h2>What Data We Collect</h2>
+
+      <h3>Cookies and Analytics</h3>
+      <p>We use Google Analytics to understand how visitors use this site. The data collected includes pages visited, time spent on the site, and approximate geographic location. All data collected through Google Analytics is anonymous and aggregated — we cannot identify individual users.</p>
+      <p>Google Analytics uses cookies to track visitor sessions. If you do not wish to be tracked, you can opt out using the <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener noreferrer" target="_blank">Google Analytics Opt-out Browser Add-on</a>.</p>
+
+      <h3>Google AdSense</h3>
+      <p>We use Google AdSense to display advertisements on this website. Google uses cookies to serve relevant ads based on your browsing behaviour and prior visits to this or other websites. Google's use of advertising cookies enables it and its partners to serve ads based on your interests.</p>
+      <p>You can opt out of personalised advertising by visiting <a href="https://www.aboutads.info" rel="noopener noreferrer" target="_blank">www.aboutads.info</a>. You can also manage your Google ad settings at <a href="https://adssettings.google.com" rel="noopener noreferrer" target="_blank">adssettings.google.com</a>.</p>
+
+      <h3>Newsletter</h3>
+      <p>If you choose to subscribe to our newsletter, we collect your email address. We use this solely to send you content updates from WildDevon. We do not sell, rent, or share your email address with any third parties. You can unsubscribe at any time using the link included in every newsletter email.</p>
+
+      <h3>Contact Forms and Email</h3>
+      <p>If you contact us directly via email, we retain the message for correspondence purposes only. We do not add you to any mailing list or share your contact details with third parties without your consent.</p>
+    </section>
+
+    <section class="reveal">
+      <h2>Affiliate Links</h2>
+      <p>WildDevon contains affiliate links to third-party services including Sykes Cottages, Booking.com, Amazon and Surfdome. When you click one of these links and subsequently make a purchase, we may earn a small commission at no additional cost to you.</p>
+      <p>Affiliate relationships do not influence our editorial content or recommendations — we only link to products and services we genuinely believe are useful to our readers. Please see our <a href="affiliate-disclosure.html">Affiliate Disclosure</a> page for full details.</p>
+    </section>
+
+    <section class="reveal">
+      <h2>Third-Party Services</h2>
+      <p>This website uses the following third-party services. Each operates under its own privacy policy and terms of service:</p>
+      <ul>
+        <li><strong>Google Analytics</strong> (<a href="https://analytics.google.com" rel="noopener noreferrer" target="_blank">analytics.google.com</a>) — site usage analytics</li>
+        <li><strong>Google AdSense</strong> (<a href="https://www.google.com/adsense" rel="noopener noreferrer" target="_blank">google.com/adsense</a>) — display advertising</li>
+        <li><strong>Sykes Cottages</strong> (<a href="https://www.sykescottages.co.uk" rel="noopener noreferrer" target="_blank">sykescottages.co.uk</a>) — accommodation affiliate partner</li>
+        <li><strong>Booking.com</strong> (<a href="https://www.booking.com" rel="noopener noreferrer" target="_blank">booking.com</a>) — accommodation affiliate partner</li>
+        <li><strong>Amazon Associates</strong> (<a href="https://www.amazon.co.uk" rel="noopener noreferrer" target="_blank">amazon.co.uk</a>) — product affiliate partner</li>
+        <li><strong>Surfdome</strong> (<a href="https://www.surfdome.com" rel="noopener noreferrer" target="_blank">surfdome.com</a>) — outdoor and surf gear affiliate partner</li>
+      </ul>
+      <p>We encourage you to review the privacy policies of these third-party services before interacting with their platforms.</p>
+    </section>
+
+    <section class="reveal">
+      <h2>Your Rights</h2>
+      <p>Under the UK GDPR and UK Data Protection Act 2018, you have the following rights regarding your personal data:</p>
+      <ul>
+        <li><strong>Right of access</strong> — you may request a copy of any personal data we hold about you.</li>
+        <li><strong>Right to rectification</strong> — you may request that we correct any inaccurate data we hold about you.</li>
+        <li><strong>Right to erasure</strong> — you may request that we delete personal data we hold about you, where applicable.</li>
+        <li><strong>Right to object</strong> — you may object to certain types of processing of your personal data.</li>
+        <li><strong>Right to withdraw consent</strong> — where processing is based on your consent, you may withdraw that consent at any time.</li>
+        <li><strong>Right to lodge a complaint</strong> — you have the right to lodge a complaint with the UK Information Commissioner's Office (ICO) at <a href="https://ico.org.uk" rel="noopener noreferrer" target="_blank">ico.org.uk</a>.</li>
+      </ul>
+      <p>To exercise any of these rights, please contact us at <a href="mailto:hello@wilddevon.co.uk">hello@wilddevon.co.uk</a>. We will respond to all requests within 30 days.</p>
+    </section>
+
+    <section class="reveal">
+      <h2>Cookies</h2>
+      <div class="info-box">
+        <p><strong>About cookies on this site</strong></p>
+        <p>This website uses cookies for Google Analytics (to understand how visitors use our site) and Google AdSense (to serve relevant advertisements). Cookies are small text files stored on your device by your browser.</p>
+        <p>You can control and manage cookie settings through your browser preferences. Most browsers allow you to view, delete, and block cookies. Please be aware that blocking all cookies may affect the functionality of this and other websites.</p>
+        <p>For more information about managing cookies, visit <a href="https://www.allaboutcookies.org" rel="noopener noreferrer" target="_blank">allaboutcookies.org</a>.</p>
+      </div>
+
+      <p>The specific cookies used on WildDevon include:</p>
+      <ul>
+        <li><strong>_ga, _ga_*, _gid</strong> — Google Analytics cookies used to distinguish users and sessions. These expire after 2 years (_ga) and 24 hours (_gid).</li>
+        <li><strong>Google AdSense cookies</strong> — used to serve personalised advertisements based on your interests. These are managed by Google and are subject to <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google's Privacy Policy</a>.</li>
+      </ul>
+    </section>
+
+    <section class="reveal">
+      <h2>Data Security</h2>
+      <p>We take reasonable steps to ensure that any personal data we hold is kept securely and protected against unauthorised access, disclosure, alteration, or destruction. However, please be aware that no method of transmission over the internet is completely secure, and we cannot guarantee the absolute security of data transmitted to us.</p>
+      <p>We do not store financial data, payment details, or sensitive personal information.</p>
+    </section>
+
+    <section class="reveal">
+      <h2>Changes to This Policy</h2>
+      <p>We may update this privacy policy from time to time to reflect changes in our practices, legal requirements, or the services we use. The date shown at the top of this page indicates when the policy was last updated. We encourage you to review this policy periodically.</p>
+      <p>Continued use of WildDevon following any changes constitutes your acceptance of the updated policy.</p>
+    </section>
+
+    <section class="reveal">
+      <h2>Contact</h2>
+      <p>For any questions or concerns about this privacy policy, or to exercise your data rights, please contact us:</p>
+      <div class="contact-highlight">
+        <a href="mailto:hello@wilddevon.co.uk">hello@wilddevon.co.uk</a>
+      </div>
+      <p>We aim to respond to all enquiries within 5 working days.</p>
+    </section>
+
+  </main>
+
+  <!-- NEWSLETTER STRIP -->
+  <section class="newsletter-strip">
+    <h2>Explore Devon with us</h2>
+    <p>Hidden beaches, wild swims and coastal walks — straight to your inbox.</p>
+    <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+      <input type="email" placeholder="Your email address" required aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Wild<span>Devon</span></a>
+        <p>Independent guide to Devon's beaches, walks, wild swimming and outdoor adventures.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Beaches</h4>
+        <ul>
+          <li><a href="devon-beaches.html">All Devon Beaches</a></li>
+          <li><a href="north-devon-beaches.html">North Devon</a></li>
+          <li><a href="south-devon-beaches.html">South Devon</a></li>
+          <li><a href="east-devon-beaches.html">East Devon</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Walks</h4>
+        <ul>
+          <li><a href="devon-walks.html">All Devon Walks</a></li>
+          <li><a href="dartmoor-walks.html">Dartmoor Walks</a></li>
+          <li><a href="south-west-coast-path-devon.html">South West Coast Path</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="about.html">About WildDevon</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+          <li><a href="devon-outdoor-guide.html">Devon Outdoor Guide</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 WildDevon.co.uk</span>
+      <div class="footer-bottom-links">
+        <a href="about.html">About</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+    revealEls.forEach(el => observer.observe(el));
+
+    // Newsletter handler
+    function handleNewsletter(e) {
+      e.preventDefault();
+      const input = e.target.querySelector('input[type="email"]');
+      const btn = e.target.querySelector('button');
+      btn.textContent = 'Thanks!';
+      btn.style.background = '#2d7d8a';
+      input.value = '';
+      input.disabled = true;
+      setTimeout(() => {
+        btn.textContent = 'Subscribe';
+        btn.style.background = '';
+        input.disabled = false;
+      }, 3000);
+    }
+  </script>
+
+</body>
+</html>

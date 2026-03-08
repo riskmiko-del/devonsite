@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About WildDevon — Independent Outdoor Guide to Devon</title>
+  <meta name="description" content="WildDevon is an independent outdoor guide to Devon's beaches, walks, wild swimming and outdoor adventures. Written by local explorers for people who love wild places.">
+  <link rel="canonical" href="https://wilddevon.co.uk/about">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1589297007344506" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About WildDevon",
+    "description": "WildDevon is an independent outdoor guide to Devon's beaches, walks, wild swimming and outdoor adventures.",
+    "url": "https://wilddevon.co.uk/about",
+    "publisher": {
+      "@type": "Organization",
+      "name": "WildDevon",
+      "url": "https://wilddevon.co.uk"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --sand: #f2ead8;
+      --ocean: #1a4a5c;
+      --teal: #2d7d8a;
+      --foam: #e8f4f0;
+      --slate: #3d4f52;
+      --gold: #c8903a;
+      --cream: #faf7f0;
+      --dark: #1c2b2e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--dark);
+      line-height: 1.7;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: var(--dark);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--sand);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+
+    .logo span {
+      color: var(--teal);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    nav ul a {
+      color: rgba(242,234,216,0.8);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      transition: color 0.2s;
+    }
+
+    nav ul a:hover {
+      color: var(--sand);
+    }
+
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .nav-hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--sand);
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+
+    .nav-menu {
+      display: flex;
+    }
+
+    @media (max-width: 900px) {
+      .nav-hamburger {
+        display: flex;
+      }
+
+      .nav-menu {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: var(--dark);
+        flex-direction: column;
+        padding: 1rem 2rem 2rem;
+        gap: 0;
+      }
+
+      .nav-menu.open {
+        display: flex;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+      }
+
+      nav ul li {
+        width: 100%;
+        border-bottom: 1px solid rgba(255,255,255,0.07);
+      }
+
+      nav ul a {
+        display: block;
+        padding: 0.85rem 0;
+        font-size: 1rem;
+      }
+    }
+
+    /* ARTICLE HERO */
+    .article-hero {
+      position: relative;
+      min-height: 380px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding-top: 64px;
+    }
+
+    .article-hero-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--dark) 0%, var(--ocean) 60%, var(--teal) 100%);
+    }
+
+    .article-hero-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ccircle cx='30' cy='30' r='1.5' fill='rgba(255,255,255,0.04)'/%3E%3C/svg%3E");
+    }
+
+    .article-hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 4rem 2rem 3rem;
+      width: 100%;
+    }
+
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 0.85rem;
+      color: rgba(242,234,216,0.6);
+    }
+
+    .breadcrumb a {
+      color: rgba(242,234,216,0.6);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--sand);
+    }
+
+    .breadcrumb span {
+      color: rgba(242,234,216,0.35);
+    }
+
+    .page-label {
+      display: inline-block;
+      background: rgba(45,125,138,0.35);
+      border: 1px solid rgba(45,125,138,0.5);
+      color: var(--foam);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.85rem;
+      border-radius: 20px;
+      margin-bottom: 1.2rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      color: var(--sand);
+      line-height: 1.2;
+      margin-bottom: 1.2rem;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--foam);
+      opacity: 0.9;
+    }
+
+    .hero-intro {
+      font-size: 1.1rem;
+      color: rgba(242,234,216,0.85);
+      max-width: 700px;
+      line-height: 1.75;
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      font-weight: 700;
+      color: var(--ocean);
+      margin: 2.5rem 0 1rem;
+      line-height: 1.3;
+    }
+
+    h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      color: var(--slate);
+      font-size: 1.02rem;
+    }
+
+    ul, ol {
+      margin: 0.75rem 0 1.25rem 1.5rem;
+      color: var(--slate);
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.4rem;
+      font-size: 1.02rem;
+    }
+
+    strong {
+      color: var(--dark);
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--teal);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: var(--ocean);
+      text-decoration: underline;
+    }
+
+    /* INFO BOX & TIP BOX */
+    .info-box {
+      background: var(--foam);
+      border-left: 4px solid var(--teal);
+      border-radius: 0 12px 12px 0;
+      padding: 1.5rem 1.75rem;
+      margin: 2rem 0;
+    }
+
+    .info-box h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ocean);
+      margin: 0 0 0.75rem;
+    }
+
+    .info-box p {
+      font-size: 0.97rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .info-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .tip-box {
+      background: #fffbf0;
+      border: 1px solid rgba(200,144,58,0.3);
+      border-left: 4px solid var(--gold);
+      border-radius: 0 12px 12px 0;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .tip-box h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--gold);
+      margin: 0 0 0.5rem;
+    }
+
+    .tip-box p {
+      font-size: 0.95rem;
+      margin-bottom: 0;
+      color: var(--slate);
+    }
+
+    /* AD SLOT */
+    .ad-slot {
+      background: var(--sand);
+      border: 1px dashed rgba(61,79,82,0.25);
+      border-radius: 8px;
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(61,79,82,0.4);
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin: 2rem 0;
+    }
+
+    /* CONTENT CARD GRID */
+    .beach-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      margin: 1.75rem 0 2rem;
+    }
+
+    .beach-card {
+      background: #fff;
+      border: 1px solid rgba(61,79,82,0.12);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .beach-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(26,74,92,0.1);
+    }
+
+    .beach-card .card-icon {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .beach-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--ocean);
+      margin: 0 0 0.6rem;
+    }
+
+    .beach-card p {
+      font-size: 0.92rem;
+      color: var(--slate);
+      margin: 0;
+      line-height: 1.55;
+    }
+
+    @media (max-width: 700px) {
+      .beach-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (min-width: 701px) and (max-width: 900px) {
+      .beach-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* REVEAL ANIMATION */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* RELATED SECTION */
+    .related {
+      background: var(--ocean);
+      padding: 4rem 2rem;
+    }
+
+    .related h2 {
+      color: var(--sand);
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .related-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px;
+      padding: 1.5rem 1.25rem;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+      display: block;
+    }
+
+    .related-card:hover {
+      background: rgba(255,255,255,0.13);
+      transform: translateY(-3px);
+      text-decoration: none;
+    }
+
+    .related-card .rc-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 0.5rem;
+    }
+
+    .related-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      color: var(--sand);
+      margin: 0 0 0.4rem;
+      font-weight: 700;
+    }
+
+    .related-card .rc-meta {
+      font-size: 0.82rem;
+      color: rgba(242,234,216,0.55);
+    }
+
+    @media (max-width: 900px) {
+      .related-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .related-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* NEWSLETTER STRIP */
+    .newsletter-strip {
+      background: var(--teal);
+      padding: 3.5rem 2rem;
+      text-align: center;
+    }
+
+    .nl-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(232,244,240,0.7);
+      margin-bottom: 0.5rem;
+    }
+
+    .newsletter-strip h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      color: #fff;
+      margin: 0 0 0.75rem;
+    }
+
+    .newsletter-strip p {
+      color: rgba(255,255,255,0.8);
+      max-width: 480px;
+      margin: 0 auto 1.75rem;
+      font-size: 1rem;
+    }
+
+    .nl-form {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .nl-form input[type="email"] {
+      flex: 1;
+      min-width: 220px;
+      padding: 0.85rem 1.25rem;
+      border: none;
+      border-radius: 8px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      background: rgba(255,255,255,0.95);
+      color: var(--dark);
+      outline: none;
+    }
+
+    .nl-form input[type="email"]::placeholder {
+      color: rgba(61,79,82,0.5);
+    }
+
+    .nl-form button {
+      padding: 0.85rem 1.75rem;
+      background: var(--gold);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      white-space: nowrap;
+    }
+
+    .nl-form button:hover {
+      background: #b57e30;
+      transform: translateY(-1px);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      padding: 3.5rem 2rem 0;
+      color: rgba(242,234,216,0.65);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .footer-col h4 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(242,234,216,0.4);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-col ul a {
+      color: rgba(242,234,216,0.65);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .footer-col ul a:hover {
+      color: var(--sand);
+      text-decoration: none;
+    }
+
+    .footer-brand .logo {
+      display: inline-block;
+      margin-bottom: 0.75rem;
+      font-size: 1.3rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.88rem;
+      color: rgba(242,234,216,0.5);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.82rem;
+      color: rgba(242,234,216,0.35);
+    }
+
+    .footer-bottom a {
+      color: rgba(242,234,216,0.45);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-bottom a:hover {
+      color: var(--sand);
+    }
+
+    .footer-bottom-links {
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 900px) {
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        padding: 2.5rem 1.25rem;
+      }
+
+      .article-hero-inner {
+        padding: 3rem 1.25rem 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="devon-outdoor-guide.html" class="logo">Wild<span>Devon</span></a>
+    <div class="nav-hamburger" id="hamburger" aria-label="Open menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="devon-beaches.html">Beaches</a></li>
+        <li><a href="devon-walks.html">Walks</a></li>
+        <li><a href="wild-swimming-devon.html">Wild Swimming</a></li>
+        <li><a href="devon-outdoor-guide.html">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="article-hero">
+    <div class="article-hero-bg"></div>
+    <div class="article-hero-inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="devon-outdoor-guide.html">Home</a>
+        <span>›</span>
+        <span>About</span>
+      </nav>
+      <div class="page-label">About WildDevon</div>
+      <h1>About WildDevon<br><em>Your Independent Devon Outdoor Guide</em></h1>
+      <p class="hero-intro">WildDevon is an independent online guide to Devon's beaches, coastal walks, wild swimming, surfing, and outdoor adventures. We write detailed, honest guides for people who love wild places — the kind of information you'd get from a knowledgeable local, not a tourist board leaflet.</p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <section class="reveal">
+      <h2>What We Cover</h2>
+      <p>Devon is one of the most varied outdoor destinations in Britain — wild Atlantic surf beaches in the north, hidden coves in the south, Dartmoor moorland in between, the Jurassic Coast to the east, and the wilderness of Exmoor to the northeast. WildDevon covers all of it.</p>
+
+      <div class="beach-grid">
+        <div class="beach-card">
+          <span class="card-icon">🏖️</span>
+          <h3>Beaches</h3>
+          <p>39 individual beach guides across Devon. Facilities, parking, dog rules, surf conditions, and seasonal tips for every type of beach-goer.</p>
+        </div>
+        <div class="beach-card">
+          <span class="card-icon">🥾</span>
+          <h3>Walks</h3>
+          <p>17 detailed walk routes from coastal headlands to moorland tors. Route descriptions, parking, difficulty ratings, and highlights for each route.</p>
+        </div>
+        <div class="beach-card">
+          <span class="card-icon">🌊</span>
+          <h3>Activities</h3>
+          <p>Wild swimming, surfing, rock pooling, kayaking, camping — comprehensive guides to outdoor activities across the county, for all ages and abilities.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="ad-slot reveal" aria-label="Advertisement">Advertisement</div>
+
+    <section class="reveal">
+      <h2>How We Work</h2>
+      <p>Every guide on WildDevon is written from first-hand experience or detailed local research. We don't just repackage Visit Devon press releases — we try to tell you what a beach is actually like in October, or which car park fills first, or where the seals haul out at low tide.</p>
+      <p>We update our guides regularly and add new pages every week. If you find something that's out of date or just plain wrong, we'd love to hear about it.</p>
+    </section>
+
+    <section class="reveal">
+      <h2>Independence &amp; How We're Funded</h2>
+
+      <div class="info-box">
+        <h3>💰 How WildDevon is funded</h3>
+        <p>WildDevon is funded through two sources: Google AdSense display advertising (the ads you see around the content) and affiliate partnerships with accommodation providers (<a href="where-to-stay-devon.html">Sykes Cottages, Booking.com</a>) and outdoor gear retailers (Amazon, Surfdome). When you book a cottage through our links, we earn a small commission at no extra cost to you.</p>
+        <p>We only recommend places and gear we'd actually use. Affiliate relationships don't influence our editorial content — if a beach has poor facilities or a campsite has bad reviews, we'll say so. See our full <a href="affiliate-disclosure.html">Affiliate Disclosure</a> for details.</p>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <h2>Get in Touch</h2>
+      <p>Found an error? Want to suggest a beach or walk we should cover? We'd love to hear from you.</p>
+
+      <div class="tip-box">
+        <h3>📧 Contact</h3>
+        <p>Drop us a line at <a href="mailto:hello@wilddevon.co.uk">hello@wilddevon.co.uk</a> — we read everything, though we can't reply to every message. For urgent corrections please include the page URL.</p>
+      </div>
+    </section>
+
+    <div class="ad-slot reveal" aria-label="Advertisement">Advertisement</div>
+
+  </main>
+
+  <!-- RELATED SECTION -->
+  <section class="related">
+    <h2 class="reveal">Explore WildDevon</h2>
+    <div class="related-grid">
+      <a href="devon-beaches.html" class="related-card reveal">
+        <div class="rc-label">Beaches</div>
+        <h3>All Devon Beaches</h3>
+        <div class="rc-meta">All Devon · 39 guides</div>
+      </a>
+      <a href="devon-walks.html" class="related-card reveal">
+        <div class="rc-label">Walks</div>
+        <h3>All Devon Walks</h3>
+        <div class="rc-meta">All Devon · 17 routes</div>
+      </a>
+      <a href="wild-swimming-devon.html" class="related-card reveal">
+        <div class="rc-label">Activities</div>
+        <h3>Wild Swimming Devon</h3>
+        <div class="rc-meta">Activities · Guide</div>
+      </a>
+      <a href="devon-outdoor-guide.html" class="related-card reveal">
+        <div class="rc-label">Home</div>
+        <h3>Devon Outdoor Guide</h3>
+        <div class="rc-meta">Home · All content</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER STRIP -->
+  <section class="newsletter-strip">
+    <div class="nl-label">Stay in the loop</div>
+    <h2>New Devon guides, every week</h2>
+    <p>Fresh walks, beaches, activities and seasonal tips — straight to your inbox.</p>
+    <form class="nl-form" onsubmit="handleNewsletterSubmit(event)">
+      <input type="email" placeholder="Your email address" required aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="devon-outdoor-guide.html" class="logo">Wild<span>Devon</span></a>
+        <p>An independent outdoor guide to Devon's beaches, walks, wild swimming and adventures. For people who love wild places.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Beaches</h4>
+        <ul>
+          <li><a href="devon-beaches.html">All Devon Beaches</a></li>
+          <li><a href="north-devon-beaches.html">North Devon Beaches</a></li>
+          <li><a href="south-devon-beaches.html">South Devon Beaches</a></li>
+          <li><a href="east-devon-beaches.html">East Devon Beaches</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Walks</h4>
+        <ul>
+          <li><a href="devon-walks.html">All Devon Walks</a></li>
+          <li><a href="dartmoor-walks.html">Dartmoor Walks</a></li>
+          <li><a href="south-west-coast-path-devon.html">South West Coast Path</a></li>
+          <li><a href="baggy-point-walk.html">Baggy Point Walk</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="about.html">About WildDevon</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+          <li><a href="devon-outdoor-guide.html">Devon Outdoor Guide</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 WildDevon.co.uk</span>
+      <div class="footer-bottom-links">
+        <a href="about.html">About</a>
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+    });
+
+    hamburger.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        navMenu.classList.toggle('open');
+      }
+    });
+
+    // Scroll reveal
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // Newsletter
+    function handleNewsletterSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button');
+      const input = e.target.querySelector('input[type="email"]');
+      btn.textContent = 'Thanks!';
+      btn.style.background = '#3d7a5c';
+      input.value = '';
+      input.disabled = true;
+      btn.disabled = true;
+    }
+  </script>
+
+</body>
+</html>
