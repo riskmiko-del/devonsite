@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — WildDevon</title>
+  <meta name="description" content="Sorry, we couldn't find that page. Explore Devon's beaches, walks and wild swimming with WildDevon.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1589297007344506" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --sand: #f2ead8;
+      --ocean: #1a4a5c;
+      --teal: #2d7d8a;
+      --foam: #e8f4f0;
+      --slate: #3d4f52;
+      --gold: #c8903a;
+      --cream: #faf7f0;
+      --dark: #1c2b2e;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--dark);
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: var(--dark);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--sand);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+
+    .logo span { color: var(--teal); }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    nav ul a {
+      color: rgba(242,234,216,0.8);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      transition: color 0.2s;
+    }
+
+    nav ul a:hover { color: var(--sand); }
+
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .nav-hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--sand);
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+
+    .nav-menu { display: flex; }
+
+    @media (max-width: 900px) {
+      .nav-hamburger { display: flex; }
+      .nav-menu {
+        display: none;
+        position: absolute;
+        top: 64px; left: 0; right: 0;
+        background: var(--dark);
+        flex-direction: column;
+        padding: 1rem 2rem 2rem;
+      }
+      .nav-menu.open { display: flex; }
+      nav ul { flex-direction: column; align-items: flex-start; gap: 0; }
+      nav ul li { width: 100%; border-bottom: 1px solid rgba(255,255,255,0.07); }
+      nav ul a { display: block; padding: 0.85rem 0; font-size: 1rem; }
+    }
+
+    /* ── MAIN 404 SECTION ── */
+    .error-section {
+      flex: 1;
+      padding-top: 64px;
+      background: linear-gradient(135deg, var(--dark) 0%, var(--ocean) 60%, var(--teal) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-bottom: 3rem;
+    }
+
+    .error-inner {
+      max-width: 640px;
+      padding: 5rem 2rem 4rem;
+    }
+
+    .error-code {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(5rem, 15vw, 9rem);
+      font-weight: 700;
+      color: rgba(242,234,216,0.15);
+      line-height: 1;
+      margin-bottom: 0;
+      letter-spacing: -0.03em;
+    }
+
+    .error-wave {
+      font-size: 3rem;
+      display: block;
+      margin: 0.5rem 0 1.5rem;
+    }
+
+    .error-inner h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 700;
+      color: var(--sand);
+      line-height: 1.25;
+      margin-bottom: 1.25rem;
+    }
+
+    .error-inner h1 em {
+      font-style: italic;
+      color: var(--foam);
+      opacity: 0.9;
+    }
+
+    .error-inner p {
+      font-size: 1.05rem;
+      color: rgba(242,234,216,0.78);
+      max-width: 480px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+
+    /* ── QUICK LINKS ── */
+    .quick-links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .quick-link {
+      display: inline-block;
+      padding: 0.85rem 1.75rem;
+      border-radius: 8px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .quick-link:hover {
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+
+    .quick-link.primary {
+      background: var(--gold);
+      color: #fff;
+    }
+
+    .quick-link.primary:hover { background: #b57e30; }
+
+    .quick-link.secondary {
+      background: rgba(255,255,255,0.12);
+      color: var(--sand);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .quick-link.secondary:hover { background: rgba(255,255,255,0.2); }
+
+    /* ── EXPLORE STRIP ── */
+    .explore-strip {
+      background: var(--cream);
+      padding: 4rem 2rem;
+    }
+
+    .explore-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .explore-inner h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      color: var(--ocean);
+      margin-bottom: 2rem;
+    }
+
+    .explore-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .explore-card {
+      background: #fff;
+      border: 1px solid rgba(61,79,82,0.12);
+      border-radius: 12px;
+      padding: 1.75rem 1.25rem;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: block;
+      text-align: left;
+    }
+
+    .explore-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(26,74,92,0.1);
+      text-decoration: none;
+    }
+
+    .explore-card .card-icon {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+
+    .explore-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--ocean);
+      margin: 0 0 0.5rem;
+    }
+
+    .explore-card p {
+      font-size: 0.9rem;
+      color: var(--slate);
+      margin: 0;
+      line-height: 1.55;
+    }
+
+    @media (max-width: 640px) {
+      .explore-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark);
+      padding: 2rem 2rem;
+      color: rgba(242,234,216,0.65);
+    }
+
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.82rem;
+      color: rgba(242,234,216,0.35);
+    }
+
+    .footer-bottom a {
+      color: rgba(242,234,216,0.45);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-bottom a:hover { color: var(--sand); }
+    .footer-bottom-links { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="logo">Wild<span>Devon</span></a>
+    <div class="nav-hamburger" id="hamburger" aria-label="Open menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="devon-beaches.html">Beaches</a></li>
+        <li><a href="devon-walks.html">Walks</a></li>
+        <li><a href="wild-swimming-devon.html">Wild Swimming</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 404 HERO -->
+  <section class="error-section">
+    <div class="error-inner">
+      <div class="error-code">404</div>
+      <span class="error-wave">🌊</span>
+      <h1>This page has drifted<br><em>out to sea</em></h1>
+      <p>Sorry, we couldn't find that page. It may have been moved, renamed, or it never existed. Let's get you back on solid ground.</p>
+      <div class="quick-links">
+        <a href="index.html" class="quick-link primary">Back to Homepage</a>
+        <a href="devon-beaches.html" class="quick-link secondary">Browse Beaches</a>
+        <a href="devon-walks.html" class="quick-link secondary">Browse Walks</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPLORE STRIP -->
+  <section class="explore-strip">
+    <div class="explore-inner">
+      <h2>Popular on WildDevon</h2>
+      <div class="explore-grid">
+        <a href="devon-beaches.html" class="explore-card">
+          <span class="card-icon">🏖️</span>
+          <h3>Devon Beaches</h3>
+          <p>39 beach guides — from surf-swept Croyde to hidden coves on the Jurassic Coast.</p>
+        </a>
+        <a href="devon-walks.html" class="explore-card">
+          <span class="card-icon">🥾</span>
+          <h3>Devon Walks</h3>
+          <p>Coastal headlands, moorland tors and river valleys — routes for every ability.</p>
+        </a>
+        <a href="wild-swimming-devon.html" class="explore-card">
+          <span class="card-icon">🌊</span>
+          <h3>Wild Swimming</h3>
+          <p>Rivers, sea pools and tidal inlets — the best wild swimming spots in Devon.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-bottom">
+      <span>© 2026 WildDevon</span>
+      <div class="footer-bottom-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+    hamburger.addEventListener('click', () => navMenu.classList.toggle('open'));
+    hamburger.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); navMenu.classList.toggle('open'); }
+    });
+  </script>
+  <script src="cookie-consent.js"></script>
+
+</body>
+</html>
