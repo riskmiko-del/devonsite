@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /site/
+
+Sitemap: https://gowilddevon.co.uk/sitemap.xml

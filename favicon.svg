@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#1a4a5c"/>
+  <!-- Wave path in sand/cream colour -->
+  <path d="M3 20 Q6 15 9 20 Q12 25 15 20 Q18 15 21 20 Q24 25 27 20 Q28.5 17.5 30 20"
+        fill="none" stroke="#f2ead8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Second smaller wave below -->
+  <path d="M3 24 Q6 21 9 24 Q12 27 15 24 Q18 21 21 24 Q24 27 27 24 Q28.5 22.5 30 24"
+        fill="none" stroke="#2d7d8a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

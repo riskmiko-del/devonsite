@@ -100,9 +100,35 @@
   </url>
   <url>
     <loc>https://gowilddevon.co.uk/where-to-stay-devon.html</loc>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Regional accommodation pages -->
+  <url>
+    <loc>https://gowilddevon.co.uk/north-devon-stays.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gowilddevon.co.uk/south-devon-stays.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gowilddevon.co.uk/east-devon-stays.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gowilddevon.co.uk/dartmoor-stays.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://gowilddevon.co.uk/devon-with-kids.html</loc>
@@ -550,6 +576,12 @@
   </url>
 
   <!-- Legal / utility pages -->
+  <url>
+    <loc>https://gowilddevon.co.uk/contact.html</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
   <url>
     <loc>https://gowilddevon.co.uk/about.html</loc>
     <lastmod>2026-03-17</lastmod>
