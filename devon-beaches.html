@@ -8,11 +8,14 @@
 <title>Devon Beaches — The Complete Guide | WildDevon</title>
 <meta name="description" content="Explore Devon's best beaches — from the surfing sands of Croyde and Woolacombe to the hidden coves of the South Hams and the Jurassic Coast. Filter by dogs, surf, families, and location.">
 <meta name="keywords" content="devon beaches, best beaches devon, north devon beaches, south devon beaches, dog friendly beaches devon, surf beaches devon, family beaches devon, jurassic coast beaches">
-<link rel="canonical" href="https://wilddevon.co.uk/devon-beaches">
+<link rel="canonical" href="https://gowilddevon.co.uk/devon-beaches.html">
 
 <meta property="og:title" content="Devon Beaches — The Complete Guide | WildDevon">
 <meta property="og:description" content="Find your perfect Devon beach — filter by dogs, surf, families, and location.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://images.pexels.com/photos/4320004/pexels-photo-4320004.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 
 <script type="application/ld+json">
 {
@@ -20,10 +23,12 @@
   "@type": "CollectionPage",
   "name": "Devon Beaches — Complete Guide",
   "description": "Complete guide to Devon beaches, filterable by type and features.",
-  "publisher": {"@type": "Organization", "name": "WildDevon", "url": "https://wilddevon.co.uk"}
+  "publisher": {"@type": "Organization", "name": "WildDevon", "url": "https://gowilddevon.co.uk"}
 }
 </script>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -664,6 +669,7 @@
     <li><a href="surfing-in-devon.html">Surfing</a></li>
     <li><a href="where-to-stay-devon.html">Where to Stay</a></li>
   </ul>
+  <button class="wd-search-btn" aria-label="Search site"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg></button>
 </nav>
 
 <!-- PAGE HERO -->
@@ -716,6 +722,7 @@
     <button class="loc-pill" data-loc="south">South Devon</button>
     <button class="loc-pill" data-loc="torbay">Torbay</button>
     <button class="loc-pill" data-loc="east">East Devon</button>
+    <input type="search" class="card-search" placeholder="🔍 Search beaches…" style="padding:0.45rem 0.75rem;border:1px solid rgba(45,125,138,0.3);border-radius:20px;font-size:0.9rem;outline:none;background:white;min-width:140px;font-family:inherit;">
   </div>
 </div>
 
@@ -2089,8 +2096,11 @@
       const loc = card.dataset.loc || '';
       const filterMatch = activeFilter === 'all' || tags.includes(activeFilter);
       const locMatch = activeLoc === 'all' || loc === activeLoc;
+      const searchTerm = (document.querySelector('.card-search') ? document.querySelector('.card-search').value.toLowerCase() : '');
+      const cardTitle = (card.querySelector('h3') ? card.querySelector('h3').textContent.toLowerCase() : '');
+      const textMatch = !searchTerm || cardTitle.includes(searchTerm) || tags.toLowerCase().includes(searchTerm) || loc.toLowerCase().includes(searchTerm);
 
-      if (filterMatch && locMatch) {
+      if (filterMatch && locMatch && textMatch) {
         card.classList.remove('hidden');
         visible++;
       } else {
@@ -2133,6 +2143,10 @@
     });
   });
 
+  // In-filter text search
+  const cardSearch = document.querySelector('.card-search');
+  if (cardSearch) cardSearch.addEventListener('input', updateCards);
+
   // Scroll reveal
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
@@ -2158,6 +2172,7 @@
   // Init count
   resultCount.textContent = cards.length;
 </script>
+<script src="site-search.js"></script>
 
 </body>
 </html>
