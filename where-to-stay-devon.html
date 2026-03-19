@@ -228,6 +228,10 @@
   /* REVEAL */
   .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1); }
   .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* Whole-card clickable (stretched link) */
+  .stay-card { position: relative; }
+  .stay-card-link::after { content: ''; position: absolute; inset: 0; }
 </style>
 </head>
 <body>
@@ -356,7 +360,7 @@
 
     <!-- NORTH DEVON THATCHED COTTAGE -->
     <div class="stay-card reveal" data-type="cottage" data-area="north" data-feat="dogs seaview">
-      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/29389433/pexels-photo-29389433.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/21235693/pexels-photo-21235693.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-top">Editor's Pick</span>
           <span class="badge badge-dogs">Dog Friendly</span>
@@ -384,7 +388,7 @@
 
     <!-- SOAR MILL COVE HOTEL -->
     <div class="stay-card reveal" data-type="hotel" data-area="south" data-feat="seaview family">
-      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/35087367/pexels-photo-35087367.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/34671909/pexels-photo-34671909.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-top">Editor's Pick</span>
           <span class="badge badge-view">Sea Views</span>
@@ -412,7 +416,7 @@
 
     <!-- GLAMPING SHEPHERD'S HUT -->
     <div class="stay-card reveal" data-type="glamping" data-area="south" data-feat="seaview">
-      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/957039/pexels-photo-957039.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/1192671/pexels-photo-1192671.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-top">Editor's Pick</span>
         </div>
@@ -439,7 +443,7 @@
 
     <!-- WILD CAMPING DARTMOOR -->
     <div class="stay-card reveal" data-type="camping" data-area="dartmoor" data-feat="dogs">
-      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/939723/pexels-photo-939723.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/29070548/pexels-photo-29070548.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-dogs">Dog Friendly</span>
         </div>
@@ -466,7 +470,7 @@
 
     <!-- CROYDE SURF COTTAGES -->
     <div class="stay-card reveal" data-type="cottage" data-area="north" data-feat="family">
-      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/4394220/pexels-photo-4394220.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/5007246/pexels-photo-5007246.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
       </div>
       <div class="stay-card-body">
         <div class="stay-card-area">North Devon</div>
@@ -490,7 +494,7 @@
 
     <!-- DARTMOOR B&B -->
     <div class="stay-card reveal" data-type="hotel" data-area="dartmoor" data-feat="dogs">
-      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/28966860/pexels-photo-28966860.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-dogs">Dog Friendly</span>
         </div>
@@ -517,7 +521,7 @@
 
     <!-- NORTH DEVON GLAMPING -->
     <div class="stay-card reveal" data-type="glamping" data-area="north" data-feat="family">
-      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/19597967/pexels-photo-19597967.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/10807701/pexels-photo-10807701.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
       </div>
       <div class="stay-card-body">
         <div class="stay-card-area">North Devon</div>
@@ -540,7 +544,7 @@
 
     <!-- CLIFFTOP CAMPING NORTH DEVON -->
     <div class="stay-card reveal" data-type="camping" data-area="north" data-feat="seaview family">
-      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/30081680/pexels-photo-30081680.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/9156056/pexels-photo-9156056.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-view">Sea Views</span>
         </div>
@@ -568,7 +572,7 @@
 
     <!-- SALCOMBE COTTAGES -->
     <div class="stay-card reveal" data-type="cottage" data-area="south" data-feat="seaview family">
-      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/34675301/pexels-photo-34675301.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/31511694/pexels-photo-31511694.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-view">Sea Views</span>
         </div>
@@ -595,7 +599,7 @@
 
     <!-- DARTMOOR GLAMPING PODS -->
     <div class="stay-card reveal" data-type="glamping" data-area="dartmoor" data-feat="dogs">
-      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/4749943/pexels-photo-4749943.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/5008366/pexels-photo-5008366.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-dogs">Dog Friendly</span>
         </div>
@@ -622,7 +626,7 @@
 
     <!-- EXETER HOTELS -->
     <div class="stay-card reveal" data-type="hotel" data-area="east" data-feat="family">
-      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/13012304/pexels-photo-13012304.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
       </div>
       <div class="stay-card-body">
         <div class="stay-card-area">East Devon / Exeter</div>
@@ -646,7 +650,7 @@
 
     <!-- SOUTH DEVON FARM CAMPING -->
     <div class="stay-card reveal" data-type="camping" data-area="south" data-feat="family dogs">
-      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/9169378/pexels-photo-9169378.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/17242182/pexels-photo-17242182.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-dogs">Dog Friendly</span>
         </div>
@@ -674,7 +678,7 @@
 
     <!-- JURASSIC COAST COTTAGES -->
     <div class="stay-card reveal" data-type="cottage" data-area="east" data-feat="seaview dogs">
-      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/34178390/pexels-photo-34178390.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/30403727/pexels-photo-30403727.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-view">Sea Views</span>
         </div>
@@ -701,7 +705,7 @@
 
     <!-- BOUTIQUE DARTMOUTH -->
     <div class="stay-card reveal" data-type="hotel" data-area="south" data-feat="seaview">
-      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/32008586/pexels-photo-32008586.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/19367325/pexels-photo-19367325.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-top">Editor's Pick</span>
         </div>
@@ -728,7 +732,7 @@
 
     <!-- DARTMOOR COTTAGE -->
     <div class="stay-card reveal" data-type="cottage" data-area="dartmoor" data-feat="dogs">
-      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/989055/pexels-photo-989055.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/17005430/pexels-photo-17005430.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-dogs">Dog Friendly</span>
         </div>
@@ -755,7 +759,7 @@
 
     <!-- EAST DEVON GLAMPING -->
     <div class="stay-card reveal" data-type="glamping" data-area="east" data-feat="family">
-      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/4994138/pexels-photo-4994138.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
       </div>
       <div class="stay-card-body">
         <div class="stay-card-area">East Devon</div>
@@ -779,7 +783,7 @@
 
     <!-- DARTMOOR CAMPING -->
     <div class="stay-card reveal" data-type="camping" data-area="dartmoor" data-feat="dogs family">
-      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/33490560/pexels-photo-33490560.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="stay-card-img" style="background-image: url('https://images.pexels.com/photos/4064432/pexels-photo-4064432.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
       </div>
       <div class="stay-card-body">
         <div class="stay-card-area">Dartmoor</div>

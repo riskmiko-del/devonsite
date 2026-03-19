@@ -164,6 +164,11 @@
   .mob-nav.open { display: flex; }
   .mob-nav a { color: var(--sand); text-decoration: none; font-size: 1.2rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.8; transition: opacity 0.2s; }
   .mob-nav a:hover { opacity: 1; }
+
+  /* Whole-card clickable (stretched link) */
+  .walk-card { position: relative; }
+  .walk-card-link { position: static; }
+  .walk-card-link::after { content: ''; position: absolute; inset: 0; }
 </style>
 </head>
 <body>
@@ -282,7 +287,7 @@
 
     <!-- HAYTOR -->
     <div class="walk-card" data-area="dartmoor" data-type="moorland" data-diff="easy">
-      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/939723/pexels-photo-939723.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/5008366/pexels-photo-5008366.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <span class="walk-card-difficulty diff-easy">Easy</span>
       </div>
       <div class="walk-card-body">
@@ -306,7 +311,7 @@
 
     <!-- HOUND TOR -->
     <div class="walk-card" data-area="dartmoor" data-type="moorland" data-diff="easy">
-      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/28966860/pexels-photo-28966860.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <span class="walk-card-difficulty diff-easy">Easy</span>
       </div>
       <div class="walk-card-body">
@@ -329,7 +334,7 @@
 
     <!-- VALLEY OF ROCKS -->
     <div class="walk-card" data-area="north" data-type="coastal" data-diff="easy">
-      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/34675301/pexels-photo-34675301.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/34671909/pexels-photo-34671909.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <span class="walk-card-difficulty diff-easy">Easy</span>
       </div>
       <div class="walk-card-body">
@@ -352,7 +357,7 @@
 
     <!-- BAGGY POINT -->
     <div class="walk-card" data-area="north" data-type="coastal" data-diff="easy">
-      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/989055/pexels-photo-989055.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/20408466/pexels-photo-20408466.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <span class="walk-card-difficulty diff-easy">Easy</span>
       </div>
       <div class="walk-card-body">
@@ -376,7 +381,7 @@
 
     <!-- SALCOMBE TO HOPE COVE -->
     <div class="walk-card" data-area="south" data-type="coastal" data-diff="moderate">
-      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/33490560/pexels-photo-33490560.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/31511694/pexels-photo-31511694.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <span class="walk-card-difficulty diff-moderate">Moderate</span>
       </div>
       <div class="walk-card-body">
@@ -398,7 +403,7 @@
 
     <!-- LYDFORD GORGE -->
     <div class="walk-card" data-area="dartmoor" data-type="woodland" data-diff="moderate">
-      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/4749943/pexels-photo-4749943.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/788200/pexels-photo-788200.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <span class="walk-card-difficulty diff-moderate">Moderate</span>
       </div>
       <div class="walk-card-body">
@@ -421,7 +426,7 @@
 
     <!-- YES TOR & HIGH WILLHAYS -->
     <div class="walk-card" data-area="dartmoor" data-type="moorland" data-diff="challenging">
-      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/19597967/pexels-photo-19597967.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/29070548/pexels-photo-29070548.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <span class="walk-card-difficulty diff-challenging">Challenging</span>
       </div>
       <div class="walk-card-body">
@@ -443,7 +448,7 @@
 
     <!-- PRAWLE POINT -->
     <div class="walk-card" data-area="south" data-type="coastal" data-diff="moderate">
-      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/32008586/pexels-photo-32008586.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/9156056/pexels-photo-9156056.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <span class="walk-card-difficulty diff-moderate">Moderate</span>
       </div>
       <div class="walk-card-body">
@@ -465,7 +470,7 @@
 
     <!-- GOLDEN CAP (JURASSIC COAST) -->
     <div class="walk-card" data-area="east" data-type="coastal" data-diff="moderate">
-      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/34178390/pexels-photo-34178390.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/30403727/pexels-photo-30403727.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <span class="walk-card-difficulty diff-moderate">Moderate</span>
       </div>
       <div class="walk-card-body">
@@ -487,7 +492,7 @@
 
     <!-- GOLITHA FALLS -->
     <div class="walk-card" data-area="dartmoor" data-type="woodland" data-diff="easy">
-      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/957039/pexels-photo-957039.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/355321/pexels-photo-355321.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <span class="walk-card-difficulty diff-easy">Easy</span>
       </div>
       <div class="walk-card-body">
@@ -510,7 +515,7 @@
 
     <!-- MORTE POINT -->
     <div class="walk-card" data-area="north" data-type="coastal" data-diff="easy">
-      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/30676936/pexels-photo-30676936.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/31586183/pexels-photo-31586183.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <span class="walk-card-difficulty diff-easy">Easy</span>
       </div>
       <div class="walk-card-body">
@@ -534,7 +539,7 @@
 
     <!-- DARTMEET -->
     <div class="walk-card" data-area="dartmoor" data-type="moorland" data-diff="moderate">
-      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=600&h=350&fit=crop');">
+      <div class="walk-card-img" style="background-image: url('https://images.pexels.com/photos/4284818/pexels-photo-4284818.jpeg?auto=compress&cs=tinysrgb&w=600&h=350&fit=crop');">
         <span class="walk-card-difficulty diff-moderate">Moderate</span>
       </div>
       <div class="walk-card-body">

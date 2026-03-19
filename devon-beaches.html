@@ -668,6 +668,10 @@
   .mob-nav.open { display: flex; }
   .mob-nav a { color: var(--sand); text-decoration: none; font-size: 1.2rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.8; transition: opacity 0.2s; }
   .mob-nav a:hover { opacity: 1; }
+
+  /* Whole-card clickable (stretched link) */
+  .beach-card { position: relative; }
+  .card-link::after { content: ''; position: absolute; inset: 0; }
 </style>
 </head>
 <body>

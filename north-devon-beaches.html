@@ -240,6 +240,10 @@
   .share-btn { display:inline-flex; align-items:center; justify-content:center; width:33px; height:33px; border-radius:50%; border:1px solid rgba(45,125,138,0.22); background:white; color:var(--slate); text-decoration:none; transition:all 0.2s; cursor:pointer; font-family:inherit; padding:0; flex-shrink:0; }
   .share-btn:hover { background:var(--teal); color:white; border-color:var(--teal); }
   #wd-copy.copied { width:auto; padding:0 0.8rem; border-radius:20px; font-size:0.72rem; font-weight:600; background:var(--teal); color:white; border-color:var(--teal); }
+
+  /* Whole-card clickable (stretched link) */
+  .beach-card { position: relative; }
+  .card-link::after { content: ''; position: absolute; inset: 0; }
 </style>
 </head>
 <body>

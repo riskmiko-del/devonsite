@@ -223,6 +223,10 @@
   /* REVEAL */
   .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1); }
   .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* Whole-card clickable (stretched link) */
+  .activity-card { position: relative; }
+  .activity-card-link::after { content: ''; position: absolute; inset: 0; }
 </style>
 </head>
 <body>
@@ -343,7 +347,7 @@
 
     <!-- WOOLACOMBE BEACH FAMILY DAY -->
     <div class="activity-card reveal" data-type="beach" data-area="north" data-cost="free">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/4320004/pexels-photo-4320004.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/6775264/pexels-photo-6775264.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-top">Top Pick</span>
           <span class="badge badge-free">Free</span>
@@ -371,7 +375,7 @@
 
     <!-- ROCK POOLING WEMBURY -->
     <div class="activity-card reveal" data-type="beach" data-area="south" data-cost="free">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/33490560/pexels-photo-33490560.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/10672234/pexels-photo-10672234.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-top">Top Pick</span>
           <span class="badge badge-free">Free</span>
@@ -399,7 +403,7 @@
 
     <!-- BECKY FALLS -->
     <div class="activity-card reveal" data-type="outdoor" data-area="dartmoor" data-cost="paid">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/4394220/pexels-photo-4394220.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/788200/pexels-photo-788200.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-top">Top Pick</span>
         </div>
@@ -426,7 +430,7 @@
 
     <!-- NATIONAL MARINE AQUARIUM -->
     <div class="activity-card reveal" data-type="indoor" data-area="south" data-cost="paid">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/9169378/pexels-photo-9169378.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/6115935/pexels-photo-6115935.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-indoor">Indoor</span>
         </div>
@@ -453,7 +457,7 @@
 
     <!-- DONKEY SANCTUARY -->
     <div class="activity-card reveal" data-type="wildlife" data-area="east" data-cost="free">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/34178390/pexels-photo-34178390.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/17242182/pexels-photo-17242182.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-free">Free</span>
         </div>
@@ -480,7 +484,7 @@
 
     <!-- DARTMOOR LETTERBOXING -->
     <div class="activity-card reveal" data-type="outdoor" data-area="dartmoor" data-cost="free">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/939723/pexels-photo-939723.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/29070548/pexels-photo-29070548.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-free">Free</span>
         </div>
@@ -507,7 +511,7 @@
 
     <!-- CROYDE BEACH -->
     <div class="activity-card reveal" data-type="beach" data-area="north" data-cost="free">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/20870311/pexels-photo-20870311.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/5232295/pexels-photo-5232295.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-free">Free</span>
         </div>
@@ -534,7 +538,7 @@
 
     <!-- PAIGNTON ZOO -->
     <div class="activity-card reveal" data-type="wildlife" data-area="south" data-cost="paid">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/19597967/pexels-photo-19597967.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/4994138/pexels-photo-4994138.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
       </div>
       <div class="activity-card-body">
         <div class="activity-card-area">South Devon</div>
@@ -557,7 +561,7 @@
 
     <!-- EXETER UNDERGROUND PASSAGES -->
     <div class="activity-card reveal" data-type="indoor" data-area="east" data-cost="paid">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/32008586/pexels-photo-32008586.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/13012304/pexels-photo-13012304.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-indoor">Indoor</span>
         </div>
@@ -584,7 +588,7 @@
 
     <!-- HAYTOR FAMILY WALK -->
     <div class="activity-card reveal" data-type="outdoor" data-area="dartmoor" data-cost="free">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/957039/pexels-photo-957039.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/5008366/pexels-photo-5008366.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-free">Free</span>
         </div>
@@ -611,7 +615,7 @@
 
     <!-- DAWLISH WARREN -->
     <div class="activity-card reveal" data-type="beach" data-area="south" data-cost="free">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/30081680/pexels-photo-30081680.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/1300510/pexels-photo-1300510.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-free">Free</span>
         </div>
@@ -638,7 +642,7 @@
 
     <!-- CREALY THEME PARK -->
     <div class="activity-card reveal" data-type="outdoor" data-area="east" data-cost="paid">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/4394220/pexels-photo-4394220.jpeg?auto=compress&cs=tinysrgb&w=600&h=350&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/29223951/pexels-photo-29223951.jpeg?auto=compress&cs=tinysrgb&w=600&h=350&fit=crop');">
       </div>
       <div class="activity-card-body">
         <div class="activity-card-area">East Devon</div>
@@ -662,7 +666,7 @@
 
     <!-- SEAL SPOTTING -->
     <div class="activity-card reveal" data-type="wildlife" data-area="north" data-cost="free">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/34675301/pexels-photo-34675301.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/31586183/pexels-photo-31586183.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-free">Free</span>
         </div>
@@ -689,7 +693,7 @@
 
     <!-- DEVON CREAM TEA -->
     <div class="activity-card reveal" data-type="food" data-area="south" data-cost="paid">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/29389433/pexels-photo-29389433.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/21235693/pexels-photo-21235693.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-top">Must Do</span>
         </div>
@@ -715,7 +719,7 @@
 
     <!-- BABBACOMBE MODEL VILLAGE -->
     <div class="activity-card reveal" data-type="outdoor" data-area="south" data-cost="paid">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/35087367/pexels-photo-35087367.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/13012304/pexels-photo-13012304.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
       </div>
       <div class="activity-card-body">
         <div class="activity-card-area">South Devon</div>
@@ -738,7 +742,7 @@
 
     <!-- LYDFORD GORGE -->
     <div class="activity-card reveal" data-type="outdoor" data-area="dartmoor" data-cost="paid">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/355321/pexels-photo-355321.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
       </div>
       <div class="activity-card-body">
         <div class="activity-card-area">Dartmoor</div>
@@ -761,7 +765,7 @@
 
     <!-- KENTS CAVERN -->
     <div class="activity-card reveal" data-type="indoor" data-area="south" data-cost="paid">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/989055/pexels-photo-989055.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/3398757/pexels-photo-3398757.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-indoor">Indoor</span>
         </div>
@@ -788,7 +792,7 @@
 
     <!-- BANTHAM BEACH -->
     <div class="activity-card reveal" data-type="beach" data-area="south" data-cost="free">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/416676/pexels-photo-416676.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/3876447/pexels-photo-3876447.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-free">Free</span>
         </div>
@@ -815,7 +819,7 @@
 
     <!-- RIVER DART ADVENTURES -->
     <div class="activity-card reveal" data-type="outdoor" data-area="south" data-cost="paid">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/4749943/pexels-photo-4749943.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/17005430/pexels-photo-17005430.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-top">Top Pick</span>
         </div>
@@ -841,7 +845,7 @@
 
     <!-- EXETER ROYAL ALBERT MEMORIAL MUSEUM -->
     <div class="activity-card reveal" data-type="indoor" data-area="east" data-cost="free">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/33490560/pexels-photo-33490560.jpeg?auto=compress&cs=tinysrgb&w=600&h=350&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/21235693/pexels-photo-21235693.jpeg?auto=compress&cs=tinysrgb&w=600&h=350&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-indoor">Indoor</span>
           <span class="badge badge-free">Free</span>
@@ -869,7 +873,7 @@
 
     <!-- CLOVELLY VILLAGE -->
     <div class="activity-card reveal" data-type="outdoor" data-area="north" data-cost="paid">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/30676936/pexels-photo-30676936.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/17412533/pexels-photo-17412533.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
       </div>
       <div class="activity-card-body">
         <div class="activity-card-area">North Devon</div>
@@ -892,7 +896,7 @@
 
     <!-- BLACKPOOL SANDS -->
     <div class="activity-card reveal" data-type="beach" data-area="south" data-cost="free">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/9169378/pexels-photo-9169378.jpeg?auto=compress&cs=tinysrgb&w=600&h=350&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/4577831/pexels-photo-4577831.jpeg?auto=compress&cs=tinysrgb&w=600&h=350&fit=crop');">
       </div>
       <div class="activity-card-body">
         <div class="activity-card-area">South Devon</div>
@@ -915,7 +919,7 @@
 
     <!-- DARTMOUTH STEAM RAILWAY -->
     <div class="activity-card reveal" data-type="outdoor" data-area="south" data-cost="paid">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/32008586/pexels-photo-32008586.jpeg?auto=compress&cs=tinysrgb&w=600&h=350&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/1766838/pexels-photo-1766838.jpeg?auto=compress&cs=tinysrgb&w=600&h=350&fit=crop');">
       </div>
       <div class="activity-card-body">
         <div class="activity-card-area">South Devon</div>
@@ -939,7 +943,7 @@
 
     <!-- ICE CREAM FARM -->
     <div class="activity-card reveal" data-type="food" data-area="south" data-cost="paid">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/4394220/pexels-photo-4394220.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/28966860/pexels-photo-28966860.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');">
       </div>
       <div class="activity-card-body">
         <div class="activity-card-area">South Devon</div>
@@ -963,7 +967,7 @@
 
     <!-- BAGGY POINT -->
     <div class="activity-card reveal" data-type="outdoor" data-area="north" data-cost="free">
-      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/30081680/pexels-photo-30081680.jpeg?auto=compress&cs=tinysrgb&w=600&h=350&fit=crop');">
+      <div class="activity-card-img" style="background-image: url('https://images.pexels.com/photos/20408466/pexels-photo-20408466.jpeg?auto=compress&cs=tinysrgb&w=600&h=350&fit=crop');">
         <div class="card-badges">
           <span class="badge badge-free">Free</span>
         </div>
