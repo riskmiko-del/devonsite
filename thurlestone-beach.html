@@ -188,6 +188,26 @@
     .facts-grid { grid-template-columns: 1fr; }
     .affiliate-block { flex-direction: column; }
   }
+
+  /* HAMBURGER BUTTON */
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; margin-left: 0.5rem; }
+  .hamburger span { display: block; width: 22px; height: 2px; background: var(--sand); border-radius: 2px; transition: transform 0.3s, opacity 0.3s; }
+  .hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.active span:nth-child(2) { opacity: 0; }
+  .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  @media (max-width: 900px) { .hamburger { display: flex; } }
+  /* MOBILE NAV OVERLAY */
+  .mob-nav { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 99; background: rgba(28,43,46,0.98); backdrop-filter: blur(20px); flex-direction: column; align-items: center; justify-content: center; gap: 2rem; }
+  .mob-nav.open { display: flex; }
+  .mob-nav a { color: var(--sand); text-decoration: none; font-size: 1.2rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.8; transition: opacity 0.2s; }
+  .mob-nav a:hover { opacity: 1; }
+
+  /* SHARE BAR */
+  .share-bar { display:flex; align-items:center; gap:0.6rem; padding:0.75rem 0 1.1rem; border-bottom:1px solid rgba(45,125,138,0.12); margin-bottom:1.5rem; }
+  .share-label { font-size:0.75rem; font-weight:600; text-transform:uppercase; letter-spacing:0.1em; color:var(--slate); opacity:0.65; margin-right:0.3rem; }
+  .share-btn { display:inline-flex; align-items:center; justify-content:center; width:33px; height:33px; border-radius:50%; border:1px solid rgba(45,125,138,0.22); background:white; color:var(--slate); text-decoration:none; transition:all 0.2s; cursor:pointer; font-family:inherit; padding:0; flex-shrink:0; }
+  .share-btn:hover { background:var(--teal); color:white; border-color:var(--teal); }
+  #wd-copy.copied { width:auto; padding:0 0.8rem; border-radius:20px; font-size:0.72rem; font-weight:600; background:var(--teal); color:white; border-color:var(--teal); }
 </style>
 <script type="application/ld+json">
 {
@@ -232,7 +252,19 @@
     <li><a href="#">Surfing</a></li>
     <li><a href="#">Where to Stay</a></li>
   </ul>
+<button class="wd-search-btn" aria-label="Search site" style="background:none;border:none;cursor:pointer;padding:0.4rem;color:inherit;display:flex;align-items:center;margin-left:0.5rem;opacity:0.75;transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.75"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+  <button class="hamburger" id="mob-hamburger" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
 </nav>
+
+<!-- MOBILE NAV OVERLAY -->
+<div class="mob-nav" id="mob-nav-overlay">
+  <a href="devon-beaches.html">Beaches</a>
+  <a href="devon-walks.html">Walks</a>
+  <a href="wild-swimming-devon.html">Wild Swimming</a>
+  <a href="devon-with-kids.html">Family</a>
+  <a href="surfing-in-devon.html">Surfing</a>
+  <a href="where-to-stay-devon.html">Where to Stay</a>
+</div>
 
 <header class="article-hero">
   <div class="article-hero-bg"></div>
@@ -257,6 +289,19 @@
 </header>
 
 <main class="article-body">
+  <div class="share-bar">
+    <span class="share-label">Share</span>
+    <a href="#" class="share-btn" id="wd-pin" aria-label="Save to Pinterest" target="_blank" rel="noopener noreferrer">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+    </a>
+    <a href="#" class="share-btn" id="wd-fb" aria-label="Share on Facebook" target="_blank" rel="noopener noreferrer">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+    </a>
+    <button class="share-btn" id="wd-copy" aria-label="Copy link">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+    </button>
+  </div>
+
 
   <div class="quick-facts reveal">
     <h2>Quick Facts — Thurlestone Beach</h2>
@@ -565,6 +610,12 @@
     <p>© 2026 WildDevon.co.uk — Made with love in Devon</p>
     <p>Independent &amp; ad-supported</p>
   </div>
+
+  <div style="background:var(--dark);text-align:center;padding:0.6rem 1rem;font-size:0.78rem;">
+    <a href="disclaimer.html" style="color:rgba(242,234,216,0.5);text-decoration:none;margin:0 0.8rem;">Disclaimer</a>
+    <a href="privacy-policy.html" style="color:rgba(242,234,216,0.5);text-decoration:none;margin:0 0.8rem;">Privacy Policy</a>
+    <a href="affiliate-disclosure.html" style="color:rgba(242,234,216,0.5);text-decoration:none;margin:0 0.8rem;">Affiliate Disclosure</a>
+  </div>
 </footer>
 
 <script>
@@ -586,6 +637,53 @@
       input.style.borderColor = 'rgba(45,125,138,0.6)';
     }
   });
+</script>
+<script src="site-search.js"></script>
+
+<script>
+(function(){
+  var btn = document.getElementById('mob-hamburger');
+  var nav = document.getElementById('mob-nav-overlay');
+  if (!btn || !nav) return;
+  btn.addEventListener('click', function() {
+    btn.classList.toggle('active');
+    nav.classList.toggle('open');
+    document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+  });
+  nav.querySelectorAll('a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      btn.classList.remove('active');
+      nav.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+})();
+</script>
+
+<script>
+(function(){
+  var url   = encodeURIComponent(window.location.href);
+  var title = encodeURIComponent(document.title);
+  var ogImg = document.querySelector('meta[property="og:image"]');
+  var img   = ogImg ? encodeURIComponent(ogImg.getAttribute('content')) : '';
+  var pin   = document.getElementById('wd-pin');
+  if(pin) pin.href = 'https://pinterest.com/pin/create/button/?url='+url+'&media='+img+'&description='+title;
+  var fb = document.getElementById('wd-fb');
+  if(fb) fb.href = 'https://www.facebook.com/sharer/sharer.php?u='+url;
+  var copy = document.getElementById('wd-copy');
+  if(copy){
+    var orig = copy.innerHTML;
+    copy.addEventListener('click', function(){
+      if(navigator.clipboard){
+        navigator.clipboard.writeText(window.location.href).then(function(){
+          copy.classList.add('copied');
+          copy.innerHTML = 'Copied!';
+          setTimeout(function(){ copy.classList.remove('copied'); copy.innerHTML = orig; }, 2000);
+        });
+      }
+    });
+  }
+})();
 </script>
 </body>
 </html>

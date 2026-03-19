@@ -195,27 +195,6 @@
     50% { transform: translateX(0%) scaleY(1.1); }
   }
 
-  .particles {
-    position: absolute;
-    inset: 0;
-    overflow: hidden;
-  }
-
-  .particle {
-    position: absolute;
-    width: 3px;
-    height: 3px;
-    background: rgba(242, 234, 216, 0.4);
-    border-radius: 50%;
-    animation: float linear infinite;
-  }
-
-  @keyframes float {
-    0% { transform: translateY(100vh) translateX(0); opacity: 0; }
-    10% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { transform: translateY(-20px) translateX(30px); opacity: 0; }
-  }
 
   .hero-content {
     position: relative;
@@ -929,7 +908,6 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-bg"></div>
-  <div class="particles" id="particles"></div>
 
   <div class="waves">
     <div class="wave"></div>
@@ -939,7 +917,7 @@
 
   <div class="hero-content">
     <div class="hero-eyebrow">Devon & The South West</div>
-    <h1>Where the <em>moor</em> meets<br>the sea.</h1>
+    <h1>Where the <em>moors</em> meet<br>the sea.</h1>
     <p>Your complete guide to beaches, coastal paths, wild swimming, surfing, and outdoor adventures across Devon and the South West.</p>
     <div class="hero-cta">
       <a href="#categories" class="btn-primary">Explore the Guide</a>
@@ -1245,6 +1223,12 @@
     <p>&copy; 2026 WildDevon.co.uk — Made with love in Devon</p>
     <p>Independent &amp; ad-supported</p>
   </div>
+
+  <div style="background:var(--dark);text-align:center;padding:0.6rem 1rem;font-size:0.78rem;">
+    <a href="disclaimer.html" style="color:rgba(242,234,216,0.5);text-decoration:none;margin:0 0.8rem;">Disclaimer</a>
+    <a href="privacy-policy.html" style="color:rgba(242,234,216,0.5);text-decoration:none;margin:0 0.8rem;">Privacy Policy</a>
+    <a href="affiliate-disclosure.html" style="color:rgba(242,234,216,0.5);text-decoration:none;margin:0 0.8rem;">Affiliate Disclosure</a>
+  </div>
 </footer>
 
 <script>
@@ -1264,17 +1248,6 @@
     });
   });
 
-  // Floating particles in hero
-  const container = document.getElementById('particles');
-  for (let i = 0; i < 25; i++) {
-    const p = document.createElement('div');
-    p.className = 'particle';
-    p.style.left = Math.random() * 100 + '%';
-    p.style.animationDuration = (8 + Math.random() * 12) + 's';
-    p.style.animationDelay = (Math.random() * 10) + 's';
-    p.style.width = p.style.height = (2 + Math.random() * 3) + 'px';
-    container.appendChild(p);
-  }
 
   // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
