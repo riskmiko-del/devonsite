@@ -18,8 +18,18 @@
     { title: 'Camping & Glamping Devon', url: 'camping-glamping-devon.html',  emoji: '⛺', category: 'Camping',       area: 'all',      tags: 'camp glamp tent pod safari dartmoor' },
     { title: 'Devon with Kids',          url: 'devon-with-kids.html',         emoji: '👨‍👩‍👧', category: 'Family',    area: 'all',      tags: 'kids family children activities days out' },
     { title: 'Coastal Walks Devon',      url: 'coastal-walks-devon.html',     emoji: '🌊', category: 'Walks',         area: 'all',      tags: 'coastal walk cliff south west coast path' },
+    { title: 'Dartmoor Walks',           url: 'dartmoor-walks.html',          emoji: '🥾', category: 'Walks',         area: 'dartmoor', tags: 'dartmoor walks tors moor hike circular' },
+    { title: 'North Devon Walks',        url: 'north-devon-walks.html',       emoji: '🥾', category: 'Walks',         area: 'north',    tags: 'north devon walks coast cliff circular' },
+    { title: 'South Devon Walks',        url: 'south-devon-walks.html',       emoji: '🥾', category: 'Walks',         area: 'south',    tags: 'south devon walks coastal hams circular' },
+    { title: 'East Devon Walks',         url: 'east-devon-walks.html',        emoji: '🥾', category: 'Walks',         area: 'east',     tags: 'east devon walks jurassic coast cliff' },
+    { title: 'Family Walks Devon',       url: 'family-walks-devon.html',      emoji: '👨‍👩‍👧', category: 'Walks',    area: 'all',      tags: 'family walks devon kids easy short circular' },
+    { title: 'Dog Friendly Walks Devon', url: 'dog-friendly-walks-devon.html',emoji: '🐶', category: 'Walks',         area: 'all',      tags: 'dog friendly walks devon off lead trail' },
+    { title: 'Exmoor Walks Devon',       url: 'exmoor-walks-devon.html',      emoji: '🥾', category: 'Walks',         area: 'north',    tags: 'exmoor walks devon moorland valley waterfall' },
     { title: 'Hidden Beaches Devon',     url: 'hidden-beaches-devon.html',    emoji: '🗺️', category: 'Beaches',       area: 'all',      tags: 'hidden secret quiet beach cove secluded' },
     { title: 'Rock Pooling Devon',       url: 'rock-pooling-devon.html',      emoji: '🦀', category: 'Activities',    area: 'all',      tags: 'rock pool crab starfish sea creature kids' },
+    { title: 'Fossil Hunting Devon',     url: 'fossil-hunting-devon.html',    emoji: '🦕', category: 'Activities',    area: 'east',     tags: 'fossil hunting devon jurassic coast lyme' },
+    { title: 'Paddleboarding Devon',     url: 'paddleboarding-devon.html',    emoji: '🏄', category: 'Activities',    area: 'all',      tags: 'paddleboarding devon sup river sea estuary' },
+    { title: 'Torre Abbey',              url: 'torre-abbey.html',             emoji: '🏛️', category: 'Activities',    area: 'south',    tags: 'torre abbey torquay history garden museum' },
     { title: 'Devon Outdoor Guide',      url: 'devon-outdoor-guide.html',     emoji: '🌿', category: 'Guide',         area: 'all',      tags: 'outdoor guide activities devon adventure' },
 
     /* ---- SEO articles ---- */
@@ -49,6 +59,9 @@
     { title: 'Barricane Beach',       url: 'barricane-beach.html',       emoji: '🐚', category: 'Beaches', area: 'north', tags: 'barricane beach shells exotic cove woolacombe' },
     { title: 'Lynmouth Beach',        url: 'lynmouth-beach.html',        emoji: '🌊', category: 'Beaches', area: 'north', tags: 'lynmouth beach pebble exmoor village' },
     { title: 'Tunnels Beaches Ilfracombe', url: 'tunnels-beaches-ilfracombe.html', emoji: '🏖️', category: 'Beaches', area: 'north', tags: 'tunnels beaches ilfracombe tidal pool swim' },
+    { title: 'Combe Martin Beach',   url: 'combe-martin-beach.html',    emoji: '🏖️', category: 'Beaches', area: 'north', tags: 'combe martin beach village north devon cove' },
+    { title: 'Hele Bay Beach',       url: 'hele-bay-beach.html',        emoji: '🏖️', category: 'Beaches', area: 'north', tags: 'hele bay beach ilfracombe quiet cove' },
+    { title: 'Lee Bay Beach',        url: 'lee-bay-beach.html',         emoji: '🌊', category: 'Beaches', area: 'north', tags: 'lee bay beach north devon quiet rocky' },
 
     /* ---- Individual beach pages — East Devon ---- */
     { title: 'Exmouth Beach',         url: 'exmouth-beach.html',         emoji: '🏖️', category: 'Beaches', area: 'east', tags: 'exmouth beach sand family water sports' },
@@ -76,18 +89,21 @@
     { title: 'South Milton Sands',    url: 'south-milton-sands.html',    emoji: '🏖️', category: 'Beaches', area: 'south', tags: 'south milton sands beach surf dog thurlestone' },
     { title: 'Thurlestone Beach',     url: 'thurlestone-beach.html',     emoji: '🌊', category: 'Beaches', area: 'south', tags: 'thurlestone beach rock arch surf dog' },
     { title: 'Broadsands Beach',      url: 'broadsands-beach.html',      emoji: '🏖️', category: 'Beaches', area: 'south', tags: 'broadsands beach family quiet torbay paignton' },
+    { title: 'Beesands Beach',       url: 'beesands-beach.html',        emoji: '⛵', category: 'Beaches', area: 'south', tags: 'beesands beach fishing village south hams quiet' },
 
     /* ---- Individual walk pages — North Devon ---- */
     { title: 'Baggy Point Walk',               url: 'baggy-point-walk.html',               emoji: '🥾', category: 'Walks', area: 'north',    tags: 'baggy point walk croyde coast circular' },
     { title: 'Morte Point Walk',               url: 'morte-point-walk.html',               emoji: '🥾', category: 'Walks', area: 'north',    tags: 'morte point walk woolacombe dramatic coast' },
     { title: 'Valley of Rocks Walk',           url: 'valley-of-rocks-walk.html',           emoji: '🥾', category: 'Walks', area: 'north',    tags: 'valley of rocks walk lynton exmoor goats' },
     { title: 'Hartland Point to Clovelly Walk',url: 'hartland-point-to-clovelly-walk.html',emoji: '🥾', category: 'Walks', area: 'north',    tags: 'hartland point clovelly walk coast path dramatic' },
+    { title: 'Watersmeet Walk',            url: 'watersmeet-walk.html',            emoji: '🥾', category: 'Walks', area: 'north',    tags: 'watersmeet walk exmoor lynmouth gorge river' },
 
     /* ---- Individual walk pages — Dartmoor ---- */
     { title: 'Dartmeet Walk Dartmoor',         url: 'dartmeet-walk-dartmoor.html',         emoji: '🥾', category: 'Walks', area: 'dartmoor', tags: 'dartmeet walk dartmoor river clapper bridge' },
     { title: 'Haytor Walk Dartmoor',           url: 'haytor-walk-dartmoor.html',           emoji: '🥾', category: 'Walks', area: 'dartmoor', tags: 'haytor walk dartmoor granite tor views' },
     { title: 'Hound Tor Walk Dartmoor',        url: 'hound-tor-walk-dartmoor.html',        emoji: '🥾', category: 'Walks', area: 'dartmoor', tags: 'hound tor walk dartmoor medieval village' },
     { title: 'Grimspound Walk Dartmoor',       url: 'grimspound-walk-dartmoor.html',       emoji: '🥾', category: 'Walks', area: 'dartmoor', tags: 'grimspound walk dartmoor bronze age village' },
+    { title: 'Yes Tor High Willhays Walk',    url: 'yes-tor-high-willhays-walk.html',    emoji: '🥾', category: 'Walks', area: 'dartmoor', tags: 'yes tor high willhays walk dartmoor highest point' },
     { title: 'Postbridge Walk Dartmoor',       url: 'postbridge-walk-dartmoor.html',       emoji: '🥾', category: 'Walks', area: 'dartmoor', tags: 'postbridge walk dartmoor clapper bridge river' },
     { title: 'Burrator Reservoir Walk',        url: 'burrator-reservoir-walk.html',        emoji: '🥾', category: 'Walks', area: 'dartmoor', tags: 'burrator reservoir walk dartmoor woodland lake' },
 
@@ -99,8 +115,14 @@
 
     /* ---- Individual walk pages — East Devon / other ---- */
     { title: 'Beer Head Walk Jurassic Coast',  url: 'beer-head-walk-jurassic-coast.html',  emoji: '🥾', category: 'Walks', area: 'east',     tags: 'beer head walk jurassic coast chalk cliffs' },
+    { title: 'Exe Estuary Walk',               url: 'exe-estuary-walk.html',               emoji: '🥾', category: 'Walks', area: 'east',     tags: 'exe estuary walk exmouth dawlish birds waders' },
     { title: 'Golitha Falls Walk',             url: 'golitha-falls-walk.html',             emoji: '🥾', category: 'Walks', area: 'all',      tags: 'golitha falls walk cornwall bodmin woodland waterfall' },
-    { title: 'South West Coast Path Devon',    url: 'south-west-coast-path-devon.html',    emoji: '🥾', category: 'Walks', area: 'all',      tags: 'south west coast path devon walking route' }
+    { title: 'South West Coast Path Devon',    url: 'south-west-coast-path-devon.html',    emoji: '🥾', category: 'Walks', area: 'all',      tags: 'south west coast path devon walking route' },
+
+    /* ---- Location guide pages ---- */
+    { title: 'Budleigh Salterton Guide',       url: 'budleigh-salterton.html',             emoji: '🌊', category: 'Guide', area: 'east',     tags: 'budleigh salterton town guide pebble beach east devon' },
+    { title: 'Ladram Bay Guide',               url: 'ladram-bay.html',                     emoji: '🏕️', category: 'Guide', area: 'east',     tags: 'ladram bay guide red rocks holiday park east devon' },
+    { title: 'Hope Cove Devon Guide',          url: 'hope-cove-devon.html',                emoji: '⛵', category: 'Guide', area: 'south',    tags: 'hope cove devon village guide fishing quiet beach' }
   ];
 
   /* ------------------------------------------------------------------ */
